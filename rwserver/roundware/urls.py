@@ -10,6 +10,7 @@ urlpatterns = patterns('',
     url(r'^roundware/$', 'rw.views.main'),
     url(r'^roundware$', 'rw.views.main'),
 
+    url(r'^visualview/', 'rw.views.visualview'),
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 

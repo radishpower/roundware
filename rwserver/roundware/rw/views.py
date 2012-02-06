@@ -16,9 +16,22 @@ from roundwared import gpsmixer
 from roundwared import rounddbus
 from roundwared import server
 
+#Used for the visualization engine
+from django.template import RequestContext, loader
+from rw.models import Asset
+from django.http import HttpResponse
 
 def main (request):
 	return HttpResponse(json.dumps(catch_errors(request), sort_keys=True, indent=4), mimetype='application/json')
+
+
+def visualview (request):
+  latest_entry_list = Asset.objects.all().order_by('session')
+  t = loader.get_template('Project/index.html')
+  c = RequestContext(request, {
+      'latest_entry_list': latest_entry_list,
+  })
+  return HttpResponse(t.render(c))
 
 def catch_errors (request):
 	try:
