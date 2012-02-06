@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/roundware/!svn/ver/911/server
+END
+INSTALL-RED5
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/roundware/!svn/ver/371/server/INSTALL-RED5
+END
+INSTALL
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/roundware/!svn/ver/602/server/INSTALL
+END
+setup.py
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/roundware/!svn/ver/568/server/setup.py
+END
+default.conf
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/roundware/!svn/ver/675/server/default.conf
+END
+INSTALL-Oneiric
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/roundware/!svn/ver/864/server/INSTALL-Oneiric
+END

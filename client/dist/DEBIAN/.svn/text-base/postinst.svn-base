@@ -1,0 +1,3 @@
+#!/bin/sh
+#maemo-select-menu-location roundclient.desktop Media
+exit 0

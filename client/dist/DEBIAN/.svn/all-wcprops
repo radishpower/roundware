@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/roundware/!svn/ver/355/client/dist/DEBIAN
+END
+control
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/roundware/!svn/ver/355/client/dist/DEBIAN/control
+END
+postinst
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/roundware/!svn/ver/2/client/dist/DEBIAN/postinst
+END

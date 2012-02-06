@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/roundware/!svn/ver/1067/android/trunk/RWExample
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/roundware/!svn/ver/1052/android/trunk/RWExample/.classpath
+END
+proguard.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/roundware/!svn/ver/900/android/trunk/RWExample/proguard.cfg
+END
+project.properties
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/roundware/!svn/ver/927/android/trunk/RWExample/project.properties
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/roundware/!svn/ver/900/android/trunk/RWExample/.project
+END
+AndroidManifest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/roundware/!svn/ver/1067/android/trunk/RWExample/AndroidManifest.xml
+END
+ic_launcher-web.png
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/roundware/!svn/ver/922/android/trunk/RWExample/ic_launcher-web.png
+END
+lgpl.txt
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/roundware/!svn/ver/918/android/trunk/RWExample/lgpl.txt
+END

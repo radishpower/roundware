@@ -1,0 +1,167 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/Tests
+END
+PerformanceTests.m
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/Tests/PerformanceTests.m
+END
+ASIFormDataRequestTests.m
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/Tests/ASIFormDataRequestTests.m
+END
+BlocksTests.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/Tests/BlocksTests.h
+END
+ClientCertificateTests.h
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/Tests/ClientCertificateTests.h
+END
+ProxyTests.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/Tests/ProxyTests.h
+END
+BlocksTests.m
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/Tests/BlocksTests.m
+END
+ASIDataCompressorTests.h
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/Tests/ASIDataCompressorTests.h
+END
+StressTests.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/Tests/StressTests.h
+END
+ASITestCase.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/Tests/ASITestCase.h
+END
+ASIHTTPRequestTests.h
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/Tests/ASIHTTPRequestTests.h
+END
+GHUnitTestMain.m
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/Tests/GHUnitTestMain.m
+END
+ClientCertificateTests.m
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/Tests/ClientCertificateTests.m
+END
+ProxyTests.m
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/Tests/ProxyTests.m
+END
+ASIDownloadCacheTests.h
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/Tests/ASIDownloadCacheTests.h
+END
+ASIDataCompressorTests.m
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/Tests/ASIDataCompressorTests.m
+END
+StressTests.m
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/Tests/StressTests.m
+END
+ASITestCase.m
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/Tests/ASITestCase.m
+END
+ASIHTTPRequestTests.m
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/Tests/ASIHTTPRequestTests.m
+END
+ASIS3RequestTests.h
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/Tests/ASIS3RequestTests.h
+END
+ASINetworkQueueTests.h
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/Tests/ASINetworkQueueTests.h
+END
+ASIDownloadCacheTests.m
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/Tests/ASIDownloadCacheTests.m
+END
+ASICloudFilesRequestTests.h
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/Tests/ASICloudFilesRequestTests.h
+END
+ASIS3RequestTests.m
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/Tests/ASIS3RequestTests.m
+END
+ASINetworkQueueTests.m
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/Tests/ASINetworkQueueTests.m
+END
+PerformanceTests.h
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/Tests/PerformanceTests.h
+END
+ASIFormDataRequestTests.h
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/Tests/ASIFormDataRequestTests.h
+END
+ASICloudFilesRequestTests.m
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/Tests/ASICloudFilesRequestTests.m
+END

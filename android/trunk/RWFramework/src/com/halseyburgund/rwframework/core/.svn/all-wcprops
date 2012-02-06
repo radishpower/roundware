@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/roundware/!svn/ver/1068/android/trunk/RWFramework/src/com/halseyburgund/rwframework/core
+END
+RWDbAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/roundware/!svn/ver/1050/android/trunk/RWFramework/src/com/halseyburgund/rwframework/core/RWDbAdapter.java
+END
+RWConfiguration.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/roundware/!svn/ver/1066/android/trunk/RWFramework/src/com/halseyburgund/rwframework/core/RWConfiguration.java
+END
+RWHttpManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/roundware/!svn/ver/1050/android/trunk/RWFramework/src/com/halseyburgund/rwframework/core/RWHttpManager.java
+END
+RWAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/roundware/!svn/ver/1050/android/trunk/RWFramework/src/com/halseyburgund/rwframework/core/RWAction.java
+END
+RWTags.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/roundware/!svn/ver/1050/android/trunk/RWFramework/src/com/halseyburgund/rwframework/core/RWTags.java
+END
+RW.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/roundware/!svn/ver/1023/android/trunk/RWFramework/src/com/halseyburgund/rwframework/core/RW.java
+END
+RWRecordingTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/roundware/!svn/ver/1050/android/trunk/RWFramework/src/com/halseyburgund/rwframework/core/RWRecordingTask.java
+END
+RWService.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/roundware/!svn/ver/1068/android/trunk/RWFramework/src/com/halseyburgund/rwframework/core/RWService.java
+END
+RWActionQueue.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/roundware/!svn/ver/1050/android/trunk/RWFramework/src/com/halseyburgund/rwframework/core/RWActionQueue.java
+END
+RWLocationTracker.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/roundware/!svn/ver/1009/android/trunk/RWFramework/src/com/halseyburgund/rwframework/core/RWLocationTracker.java
+END
+RWActionFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/roundware/!svn/ver/1066/android/trunk/RWFramework/src/com/halseyburgund/rwframework/core/RWActionFactory.java
+END

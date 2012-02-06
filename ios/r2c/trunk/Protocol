@@ -1,0 +1,143 @@
+ROUNDWARE SERVER PROTOCOL
+
+######################################################################
+# Overview
+######################################################################
+
+For all operations to be called from the server, you post operation=<String> along with your other post arguments to the web service. A config must also be specified (config=scapes or config=oceanvoices).  For example, to request a stream to be created, and get the URL back, the following would work:
+
+SCAPES: http://scapesaudio.dyndns.org/roundware/roundware.py?config=scapes&operation=request_stream&categoryid=8&subcategoryid=9
+
+OCEAN VOICES: http://oceanvoices.dyndns.org/roundware/roundware.py?config=oceanvoices&operation=request_stream&categoryid=7&subcategoryid=8
+
+All operations return JSON objects of different structures depending on what information is needed. The operations return values are given in detail in the Operations section.
+
+This is done using GET rather than POST since it's easier to write in a document. The Python scripts accept both POST and GET. Below are details of the valid operations, the arguments they take, and the JSON objects they return.
+
+All operations can potentially raise exceptions. If one is raised the return value of the web service is a JSON object representing an error (see Errors)
+
+Some return values contain a USER_ERROR_MESSAGE key which should be displayed in a popup on the device with the title "Scapes/Ocean Voices Message" and a single OK button to dismiss.  This gives us flexibility from the server side to communicate with the users.
+
+######################################################################
+# Definitions
+######################################################################
+
+Many of the operations accept the same types of arguments. To make it easier write this document and keep it up-to-date later, we provide a few definitions to be referred to later in the document.
+
+GPSKeys are latitude, longitude, clienttime, (course, haccuracy, speed)
+RequestKeys are categoryid, subcategoryid, questionid, GPSKeys
+	- for Scapes, categoryid=8, subcategoryid=9
+	- for Ocean Voices, categoryid=7, subcategoryid=8
+DemographicKeys are ageid, genderid, and usertypeid
+	- for Scapes, usertypeid=17 always for museum visitor
+	- also, ageid and genderid will need to be determined from demographicid; in other words,
+	  if 'Man' is selected as the speaker, ageid will be 17 (adult) and genderid will be 2 (male)
+		- adult=17, child=16, man=2, woman=1
+
+NOTE: ageid, genderid, questionid will be single values for 'Speak' related messages
+(ie. start_record, upload_and_process_file etc), but will contain multiple values 
+for 'Listen' related messages (ie. modify_stream, move_listener etc)
+
+######################################################################
+# Operations:
+######################################################################
+
+Scapes related operations have *
+Ocean Voices related operations have ^
+
+*^ Operation: request_stream
+Description:
+Creates a stream based on the given request parameters and returns the URL the audio is being streamed to.
+Parameters: udid, categoryid, subcategoryid, (questionid, latitude, longitude, course, haccuracy, speed) 
+Returns: JSON object with the following keys
+	(SESSIONID, STREAM_URL) ie. { "SESSIONID": 21, "STREAM_URL": "http://scapesaudio.dyndns.org:8001/stream21.mp3" }
+
+^ Operation: number_of_recordings
+Description:
+	Returns the number of recordings that match the given request parameters.
+Parameters: categoryid, subcategoryid, questionid, ageid, genderid, usertypeid
+Returns: <Integer>
+
+*^ Operation: modify_stream
+Description:
+	Modifies the stream with the new request arguments.
+Parameters: sessionid, categoryid, subcategoryid, questionid, ageid, genderid, usertypeid, clienttime, (latitude, longitude)
+Returns: <String>
+
+*Operation: move_listener
+Description:
+Updates the server with where the user is. Returns true if the user is in of range of the project.
+Parameters: sessionid, latitude, longitude, clienttime, (course, haccuracy, speed)
+Returns: <Boolean>
+
+*^ Operation: heartbeat
+Description:
+Tells the server the client is still listening. This is useful if the phone GPS has not changed and does not needed to send move_listener, but needs to send something so that the server does not clean up the stream.
+Parameters: sessionid, latitude, longitude
+Returns: true
+
+Operation: skip_ahead
+Descriptions:
+	Tells the stream to skip past the current recording playing and move on to the next one.
+Parameters: IDKeys
+Returns: true
+
+*^ Operation: upload_and_process_file
+Description:
+Uploads the given file to the system and stores a record for the file using the given UserKeys and RequestKeys to categorize it in the db. Returns the recordingid used to store it in the db.
+Parameters: sessionid, categoryid, subcategoryid, questionid, ageid, genderid, usertypeid, clienttime, latitude, longitude, file, submittedyn=Y
+Returns: <Integer>
+	
+Operation: process_recorded_file
+Description:
+Like upload_and_process_file, except it accepts the filename of a file already on the system, but not yet processed. Useful for clients that don't use web upload, but something like Red5 and flash.
+Parameters: sessionid, categoryid, subcategoryid, questionid, ageid, genderid, usertypeid, clienttime, latitude, longitude, filename, submittedyn=Y
+Returns: <Integer>
+
+Operation: submit_recording
+Description:
+Submits an already-uploaded recording. Not needed if the file was processed with submittedyn = 'Y'. Useful if the file is processed by default with 'N' and later allows the user to choose to submit.
+Parameters: sessionid, recordingid
+Returns: true
+
+*^ Operation: log_event
+Description: 
+Used to indicate to the server when the user has performed and action that we want to log in the database.  Replaces start_record, stop_record, start_stream, stop_stream, start_upload, stop_upload
+Parameters: sessionid, clienttime, latitude, longitude, questionid, ageid, genderid, usertypeid, eventtypeid, (message, course, haccuracy, speed)
+	eventtypeids are:
+		start_record=5
+		stop_record=6
+		start_listen=3
+		stop_listen=4
+stop_session=11
+		start_upload=7
+		stop_upload=14 (message=Y or N for success or failure of upload)
+Returns: true
+
+*^ Operation: get_questions
+Description:
+A list of questions that are part of the given category and optionally subcategory. When activeyn is not 'Y' the questions can still be selected to be listened to but they are not asked anymore on the speak side.
+Parameters: categoryid, subcategoryid
+Returns: A list of JSON objects with the following keys
+	(id, text, categoryid, subcategoryid, ordering, speakyn, listenyn)
+
+Operation: current_version
+Description: Returns the version of the server that is running.
+Parameters: None
+Returns: <float>
+
+######################################################################
+# Errors:
+######################################################################
+
+Any operation can return an error. Errors are objects with two members,
+ERROR_NUMBER, and ERROR_MESSAGE. They look like this:
+{ "ERROR_NUMBER" : <Integer>, "ERROR_MESSAGE" : <String> }
+
+For all operations this web service supports, it is valid to return the specified return value for the given operation, or an error. When using this web service, one should check to see if the returned value is an error before proceeding.
+
+There are USER_ERROR_MESSAGE keys as well:
+
+{ "USER_ERROR_MESSAGE": "This is a string that should be printed in a popup box on the phone" }
+
+Any time a user error is returned, USER_ERROR_MESSAGE string should be displayed in a popup on the device with the title "Scapes Message" and a single OK button to dismiss.

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/roundware/!svn/ver/801/android/trunk/ROUNDcambridge/res/layout
+END
+question_list_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/roundware/!svn/ver/762/android/trunk/ROUNDcambridge/res/layout/question_list_item.xml
+END
+speak.xml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/roundware/!svn/ver/801/android/trunk/ROUNDcambridge/res/layout/speak.xml
+END
+speaker_list_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/roundware/!svn/ver/762/android/trunk/ROUNDcambridge/res/layout/speaker_list_item.xml
+END
+main.xml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/roundware/!svn/ver/746/android/trunk/ROUNDcambridge/res/layout/main.xml
+END
+version_dialog.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/roundware/!svn/ver/645/android/trunk/ROUNDcambridge/res/layout/version_dialog.xml
+END
+listenperson.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/roundware/!svn/ver/645/android/trunk/ROUNDcambridge/res/layout/listenperson.xml
+END
+listen.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/roundware/!svn/ver/771/android/trunk/ROUNDcambridge/res/layout/listen.xml
+END

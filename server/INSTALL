@@ -1,0 +1,29 @@
+sudo apt-get install subversion python-mysqldb python-configobj gstreamer0.10-plugins-ugly-multiverse mysql-server icecast2 ffmpeg apache2 pacpl gstreamer0.10-gnomevfs gstreamer0.10-plugins-ugly libavcodec-unstripped-52 python-dbus
+
+echo "create database recon" | mysql -uroot -p
+echo "create user 'round'@'localhost' identified by 'round'" | mysql -uroot -p
+echo "grant all privileges on recon.* to 'round'@'localhost' with grant option" | mysql -uroot -p
+#TODO: Must create some minimal table structure.
+cat data_files/schema.sql | mysql -uround -pround recon
+
+sudo mkdir /var/www/reconaudio
+sudo chmod a+wrx /var/www/reconaudio #maybe not a great idea. but www-data user needs to create files here somehow.
+sudo mkdir /var/www/.gnome2
+sudo chown www-data:www-data /var/www/.gnome2
+sudo chown www-data /var/log/roundware
+
+sudo $EDITOR /etc/default/icecast2 #to set enable=true
+sudo $EDITOR /etc/icecast2/icecast.xml #set passwords to what's in /etc/roundwared (or stream.py, they should be in /etc/roundwared)
+sudo $EDITOR /etc/icecast2/icecast.xml #set the max number of sources at once to something more than just 2.
+sudo /etc/init.d/icecast2 restart
+
+svn co https://roundware.svn.sourceforge.net/svnroot/roundware roundware 
+cd roundware/server/
+sudo python setup.py install
+sudo /etc/init.d/dbus restart # This will possible cause issues and require system reboot.
+sudo $EDITOR /etc/roundwared #If you get errors.
+
+#Do the instruction here to install fastcgi
+#Copy the roundware.py fastcgi app to /var/www/roundware
+#http://www.electricmonk.nl/docs/apache_fastcgi_python/apache_fastcgi_python.html
+

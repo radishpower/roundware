@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/roundware/!svn/ver/1079/ios/rwframework/trunk/Third%20Party/AFNetworking
+END
+AFHTTPClient.m
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/roundware/!svn/ver/1079/ios/rwframework/trunk/Third%20Party/AFNetworking/AFHTTPClient.m
+END
+AFNetworking.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/roundware/!svn/ver/866/ios/rwframework/trunk/Third%20Party/AFNetworking/AFNetworking.h
+END
+AFXMLRequestOperation.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/roundware/!svn/ver/866/ios/rwframework/trunk/Third%20Party/AFNetworking/AFXMLRequestOperation.h
+END
+AFNetworkActivityIndicatorManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/roundware/!svn/ver/866/ios/rwframework/trunk/Third%20Party/AFNetworking/AFNetworkActivityIndicatorManager.h
+END
+UIImageView+AFNetworking.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/roundware/!svn/ver/866/ios/rwframework/trunk/Third%20Party/AFNetworking/UIImageView+AFNetworking.h
+END
+AFXMLRequestOperation.m
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/roundware/!svn/ver/1079/ios/rwframework/trunk/Third%20Party/AFNetworking/AFXMLRequestOperation.m
+END
+AFNetworkActivityIndicatorManager.m
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/roundware/!svn/ver/866/ios/rwframework/trunk/Third%20Party/AFNetworking/AFNetworkActivityIndicatorManager.m
+END
+AFJSONRequestOperation.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/roundware/!svn/ver/1079/ios/rwframework/trunk/Third%20Party/AFNetworking/AFJSONRequestOperation.h
+END
+AFURLConnectionOperation.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/roundware/!svn/ver/1079/ios/rwframework/trunk/Third%20Party/AFNetworking/AFURLConnectionOperation.h
+END
+UIImageView+AFNetworking.m
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/roundware/!svn/ver/1079/ios/rwframework/trunk/Third%20Party/AFNetworking/UIImageView+AFNetworking.m
+END
+AFJSONUtilities.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/roundware/!svn/ver/1079/ios/rwframework/trunk/Third%20Party/AFNetworking/AFJSONUtilities.h
+END
+AFImageCache.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/roundware/!svn/ver/1079/ios/rwframework/trunk/Third%20Party/AFNetworking/AFImageCache.h
+END
+AFJSONRequestOperation.m
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/roundware/!svn/ver/1079/ios/rwframework/trunk/Third%20Party/AFNetworking/AFJSONRequestOperation.m
+END
+AFURLConnectionOperation.m
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/roundware/!svn/ver/1079/ios/rwframework/trunk/Third%20Party/AFNetworking/AFURLConnectionOperation.m
+END
+AFHTTPRequestOperation.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/roundware/!svn/ver/866/ios/rwframework/trunk/Third%20Party/AFNetworking/AFHTTPRequestOperation.h
+END
+AFPropertyListRequestOperation.h
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/roundware/!svn/ver/866/ios/rwframework/trunk/Third%20Party/AFNetworking/AFPropertyListRequestOperation.h
+END
+AFImageCache.m
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/roundware/!svn/ver/1079/ios/rwframework/trunk/Third%20Party/AFNetworking/AFImageCache.m
+END
+AFImageRequestOperation.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/roundware/!svn/ver/866/ios/rwframework/trunk/Third%20Party/AFNetworking/AFImageRequestOperation.h
+END
+AFHTTPRequestOperation.m
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/roundware/!svn/ver/866/ios/rwframework/trunk/Third%20Party/AFNetworking/AFHTTPRequestOperation.m
+END
+AFHTTPClient.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/roundware/!svn/ver/1079/ios/rwframework/trunk/Third%20Party/AFNetworking/AFHTTPClient.h
+END
+AFPropertyListRequestOperation.m
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/roundware/!svn/ver/866/ios/rwframework/trunk/Third%20Party/AFNetworking/AFPropertyListRequestOperation.m
+END
+AFImageRequestOperation.m
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/roundware/!svn/ver/1079/ios/rwframework/trunk/Third%20Party/AFNetworking/AFImageRequestOperation.m
+END

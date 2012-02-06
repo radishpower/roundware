@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/roundware/!svn/ver/1097/android/branches/wifislam/MountainGhosts
+END
+default.properties
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/roundware/!svn/ver/1092/android/branches/wifislam/MountainGhosts/default.properties
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/roundware/!svn/ver/1092/android/branches/wifislam/MountainGhosts/.classpath
+END
+proguard.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/roundware/!svn/ver/1092/android/branches/wifislam/MountainGhosts/proguard.cfg
+END
+MountainGhosts.iml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/roundware/!svn/ver/1094/android/branches/wifislam/MountainGhosts/MountainGhosts.iml
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/roundware/!svn/ver/1092/android/branches/wifislam/MountainGhosts/.project
+END
+AndroidManifest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/roundware/!svn/ver/1092/android/branches/wifislam/MountainGhosts/AndroidManifest.xml
+END

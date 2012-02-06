@@ -1,0 +1,5 @@
+# Inorder for the auto-update feature of the client software
+# to work properly, as it is designed, the general user must
+# be able to use dpkg.
+user ALL = NOPASSWD: /usr/bin/dpkg
+

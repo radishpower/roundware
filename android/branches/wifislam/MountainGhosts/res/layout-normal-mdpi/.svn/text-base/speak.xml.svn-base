@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_speak"
+    android:orientation="vertical"
+    >
+    
+	<ViewFlipper android:id="@+id/flipper"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+	
+		<!-- Main Speak layout with control panel -->	
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:orientation="vertical"
+		    >
+	
+		    <!-- Toolbar -->
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="39dp"
+				android:background="@drawable/navbar_border"
+				>
+				
+				<TextView
+		        	android:layout_width="wrap_content"
+		        	android:layout_height="fill_parent"
+		        	android:textColor="@color/navbar_title_text"
+		        	android:gravity="center_vertical"
+		        	android:textSize="18dp"
+		        	android:textStyle="bold"
+		        	android:text="@string/nav_title_speak"
+		        	android:shadowColor="@color/navbar_title_shadow"
+		        	android:shadowDx="1"
+		        	android:shadowDy="1"
+		        	android:shadowRadius="1.2"
+		        	android:layout_marginLeft="10dp"
+		        	/>
+		
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:layout_weight="0.5"
+					/>
+		
+				<ImageButton android:id="@+id/button_home"
+					android:layout_width="40dp"
+					android:layout_height="fill_parent"
+					android:layout_marginRight="1dp"
+					android:layout_centerInParent="true"
+					android:layout_gravity="right"
+					android:src="@drawable/navbar_home"
+					android:textColor="#FFFFFF"
+					android:textSize="12sp"
+					android:background="@drawable/navbar_button_selector"
+					android:visibility="visible"
+					/>
+		
+				<ImageButton android:id="@+id/button_exit"
+					android:layout_width="40dp"
+					android:layout_height="fill_parent"
+					android:layout_marginRight="1dp"
+					android:layout_centerInParent="true"
+					android:layout_gravity="right"
+					android:src="@drawable/navbar_close"
+					android:textColor="#FFFFFF"
+					android:textSize="12sp"
+					android:background="@drawable/navbar_button_selector"
+					android:visibility="gone"
+					/>
+				
+			</LinearLayout>
+	    
+			<RelativeLayout
+				xmlns:app="http://schemas.android.com/apk/res/com.halseyburgund.mountainghosts"
+	  			android:layout_width="fill_parent"
+				android:layout_height="305dp">
+						        			
+				<com.halseyburgund.mountainghosts.view.SlidingPanel
+					android:id="@+id/question_panel"
+					android:layout_width="fill_parent"
+					android:layout_height="305dp"
+					android:orientation="vertical"
+					app:speed="500"
+					app:targetHeight="305dp"
+					android:visibility="gone"
+					android:background="@drawable/listen_full_pane"
+					android:layout_alignParentBottom="true">
+					
+					<!-- Top message area in sliding panel -->
+					<LinearLayout
+				        	android:layout_width="fill_parent"
+				        	android:layout_height="100dp"
+				        	android:orientation="vertical"
+				        	android:gravity="center"
+				        	android:paddingLeft="10dp"
+				        	android:paddingRight="10dp"
+						>
+						<TextView
+				        	android:layout_width="fill_parent"
+				        	android:layout_height="wrap_content"
+				        	android:textColor="@color/subtitle"
+				        	android:gravity="center"
+				        	android:textStyle="normal"
+					        android:textSize="16sp"
+				        	android:text="@string/speak_what_question_header"
+				        	android:paddingBottom="10dp"
+				        	/>
+						<TextView
+				        	android:layout_width="fill_parent"
+				        	android:layout_height="wrap_content"
+				        	android:textColor="@color/scroll_hint"
+				        	android:gravity="center"
+				        	android:textStyle="normal"
+					        android:textSize="11sp"
+				        	android:text="@string/speak_question_scroll_message"/>
+					</LinearLayout>
+					
+		   			<ListView android:id="@+id/question_list"
+			            android:layout_width="300dp"
+			            android:layout_height="190dp"
+						android:layout_margin="10dp"
+					    android:drawSelectorOnTop="false"
+					    android:cacheColorHint="#00000000"
+						android:scrollbars="none"
+					    />
+						    
+				</com.halseyburgund.mountainghosts.view.SlidingPanel>
+				
+				<com.halseyburgund.mountainghosts.view.SlidingPanel
+					android:id="@+id/speaker_panel"
+					android:layout_width="fill_parent"
+					android:layout_height="305dp"
+					android:orientation="vertical"
+					app:speed="500"
+					app:targetHeight="305dp"
+					android:visibility="visible"
+					android:background="@drawable/listen_full_pane"
+					android:layout_alignParentBottom="true">
+
+					<!-- Top message area in sliding panel -->
+					<LinearLayout
+				        	android:layout_width="fill_parent"
+				        	android:layout_height="100dp"
+				        	android:orientation="vertical"
+				        	android:gravity="center"
+				        	android:paddingLeft="10dp"
+				        	android:paddingRight="10dp"
+						>
+						<TextView
+				        	android:layout_width="fill_parent"
+				        	android:layout_height="wrap_content"
+				        	android:textColor="@color/subtitle"
+				        	android:gravity="center"
+				        	android:textStyle="normal"
+					        android:textSize="16sp"
+				        	android:text="@string/speak_who_question_header"
+				        	android:paddingBottom="10dp"
+				        	/>
+				        <!-- scroll message not needed for this screen resolution -->
+						<TextView
+				        	android:layout_width="fill_parent"
+				        	android:layout_height="wrap_content"
+				        	android:textColor="@color/scroll_hint"
+				        	android:gravity="center"
+				        	android:textStyle="normal"
+					        android:textSize="11sp"
+				        	android:text=""/>
+					</LinearLayout>
+			        	
+		   			<ListView android:id="@+id/speaker_list"
+			            android:layout_width="300dp"
+			            android:layout_height="190dp"
+						android:layout_margin="10dp"
+					    android:drawSelectorOnTop="false"
+					    android:cacheColorHint="#00000000"
+						android:scrollbars="none"
+					    />
+				</com.halseyburgund.mountainghosts.view.SlidingPanel>  
+				    
+				<com.halseyburgund.mountainghosts.view.SlidingPanel
+					android:id="@+id/occupation_panel"
+					android:layout_width="fill_parent"
+					android:layout_height="305dp"
+					android:orientation="vertical"
+					app:speed="500"
+					app:targetHeight="305dp"
+					android:visibility="gone"
+					android:background="@drawable/listen_full_pane"
+					android:layout_alignParentBottom="true">
+
+					<!-- Top message area in sliding panel -->
+					<LinearLayout
+				        	android:layout_width="fill_parent"
+				        	android:layout_height="100dp"
+				        	android:orientation="vertical"
+				        	android:gravity="center"
+				        	android:paddingLeft="10dp"
+				        	android:paddingRight="10dp"
+						>
+						<TextView
+				        	android:layout_width="fill_parent"
+				        	android:layout_height="wrap_content"
+				        	android:textColor="@color/subtitle"
+				        	android:gravity="center"
+				        	android:textStyle="normal"
+					        android:textSize="16sp"
+				        	android:text="@string/speak_what_type_question_header"
+				        	android:paddingBottom="10dp"
+				        	/>
+						<TextView
+				        	android:layout_width="fill_parent"
+				        	android:layout_height="wrap_content"
+				        	android:textColor="@color/scroll_hint"
+				        	android:gravity="center"
+				        	android:textStyle="normal"
+					        android:textSize="11sp"
+				        	android:text="@string/speak_question_scroll_message"/>
+					</LinearLayout>
+
+		   			<ListView android:id="@+id/occupation_list"
+			            android:layout_width="300dp"
+			            android:layout_height="190dp"
+						android:layout_margin="10dp"
+					    android:drawSelectorOnTop="false"
+					    android:cacheColorHint="#00000000"
+						android:scrollbars="none"
+					    />
+				</com.halseyburgund.mountainghosts.view.SlidingPanel>
+				    
+				<com.halseyburgund.mountainghosts.view.SlidingPanel
+					android:id="@+id/record_panel"
+					android:layout_width="fill_parent"
+					android:layout_height="305dp"
+					android:orientation="vertical"
+					app:speed="500"
+					app:targetHeight="305dp"
+					android:visibility="gone"
+					android:background="@drawable/content_frame_no_meter"
+					android:layout_alignParentBottom="true">
+		
+					<TextView
+						android:id="@+id/record_question_title"
+			        	android:layout_width="fill_parent"
+			        	android:layout_height="100dp"
+			        	android:padding="10dp"
+			        	android:textColor="@color/subtitle"
+			        	android:gravity="center"
+			        	android:textStyle="normal"/>
+			        	
+			        <TextView
+		       			android:id="@+id/label_record_time"
+		       			android:visibility="gone"
+		       			android:layout_width="fill_parent"
+		       			android:layout_height="165dp"
+		       			android:textSize="96sp"
+		       			android:gravity="center"
+		       			android:text="0"
+		       			android:textColor="@color/record_time_text"
+		       			android:shadowColor="@color/record_time_shadow"
+		       			android:shadowDx="1"
+		       			android:shadowDy="1"
+		       			android:shadowRadius="1.2"
+		       			/>			
+				
+					<com.halseyburgund.mountainghosts.view.LevelMeterView
+		  				android:id="@+id/record_level_meter"
+		       			android:visibility="gone"
+		  				android:gravity="center"
+		  				android:layout_marginTop="0dp"
+		  				android:layout_width="fill_parent"
+						android:layout_height="40dp"/>
+		
+					<ImageView
+						android:id="@+id/record_help"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="10dp"
+						android:src="@drawable/help" />
+				</com.halseyburgund.mountainghosts.view.SlidingPanel>  
+			</RelativeLayout>
+	     				
+			<LinearLayout
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:id="@+id/menu"
+			    android:orientation="horizontal">
+			
+				<ImageButton android:id="@+id/button_rerecord"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@android:color/transparent"
+					android:src="@drawable/speak_rerecord_selector"/>
+			  	
+			  	<ImageButton android:id="@+id/button_record"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@android:color/transparent"
+					android:src="@drawable/speak_record_disabled"/>
+					
+				<ImageButton android:id="@+id/button_submit"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@android:color/transparent"
+					android:src="@drawable/speak_submit_selector"/>
+			</LinearLayout>
+		  
+		</LinearLayout>
+		<!-- End of main Speak view -->
+
+		<!-- Speak Thank You view with map -->
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:orientation="vertical"
+		    >
+
+		    <!-- Toolbar -->
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="39dp"
+				android:background="@drawable/navbar_border"
+				>
+				
+				<TextView
+		        	android:layout_width="wrap_content"
+		        	android:layout_height="fill_parent"
+		        	android:textColor="@color/navbar_title_text"
+		        	android:gravity="center_vertical"
+		        	android:textSize="18dp"
+		        	android:textStyle="bold"
+		        	android:text="@string/nav_title_thankyou"
+		        	android:shadowColor="@color/navbar_title_shadow"
+		        	android:shadowDx="1"
+		        	android:shadowDy="1"
+		        	android:shadowRadius="1.2"
+		        	android:layout_marginLeft="10dp"
+		        	/>
+		
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:layout_weight="0.5"
+					/>
+		
+				<ImageButton android:id="@+id/button_thanks_home"
+					android:layout_width="40dp"
+					android:layout_height="fill_parent"
+					android:layout_marginRight="1dp"
+					android:layout_centerInParent="true"
+					android:layout_gravity="right"
+					android:src="@drawable/navbar_play"
+					android:textColor="#FFFFFF"
+					android:textSize="12sp"
+					android:background="@drawable/navbar_button_selector"
+					android:visibility="visible"
+					/>
+		
+				<ImageButton android:id="@+id/button_thanks_exit"
+					android:layout_width="40dp"
+					android:layout_height="fill_parent"
+					android:layout_marginRight="1dp"
+					android:layout_centerInParent="true"
+					android:layout_gravity="right"
+					android:src="@drawable/navbar_close"
+					android:textColor="#FFFFFF"
+					android:textSize="12sp"
+					android:background="@drawable/navbar_button_selector"
+					android:visibility="gone"
+					/>
+				
+			</LinearLayout>
+
+			<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:orientation="vertical"
+			    android:background="@drawable/thankyou_frame"
+			    >
+		   
+			   	<TextView
+		        	android:layout_width="fill_parent"
+		        	android:layout_height="100dp"
+		        	android:textColor="@color/subtitle"
+		        	android:gravity="center"
+		        	android:textStyle="normal"
+		        	android:text="@string/speak_recording_submitted_message"
+		        	android:paddingLeft="10dp"
+		        	android:paddingRight="10dp"
+		        	/>
+		        	
+				<FrameLayout
+				    android:layout_width="fill_parent"
+				    android:layout_height="fill_parent"
+	                android:layout_marginTop="1dp"
+	                android:layout_marginBottom="5dp"
+	                android:layout_marginLeft="5dp"
+	                android:layout_marginRight="5dp"
+					android:background="@color/map_background"
+					>
+		            <com.google.android.maps.MapView
+		      	        android:id="@+id/mapview"
+		                android:layout_width="fill_parent"
+		                android:layout_height="fill_parent"
+		                android:layout_margin="0dp"
+		                android:enabled="true"
+		                android:clickable="true"
+						android:apiKey="@string/google_maps_api_key"
+		                />
+				</FrameLayout>
+	      	</LinearLayout>
+		</LinearLayout>
+		<!-- End of Speak Thank You view -->
+		
+	</ViewFlipper>
+</LinearLayout>

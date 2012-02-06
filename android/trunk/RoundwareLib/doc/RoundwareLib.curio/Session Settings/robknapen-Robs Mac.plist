@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>3D9D91C6-1720-4AF5-A42D-8A54B88A36D1</key>
+	<dict>
+		<key>Visible Rect</key>
+		<string>{{0, 0}, {918, 780}}</string>
+		<key>Zoom Factor</key>
+		<real>1</real>
+	</dict>
+	<key>Expanded Ideaspaces</key>
+	<array/>
+	<key>Expanded Sections</key>
+	<array/>
+	<key>InspectorBar RBSplitView Layout</key>
+	<string>2 27 795</string>
+	<key>Last Viewed Ideaspaces</key>
+	<array>
+		<string>3D9D91C6-1720-4AF5-A42D-8A54B88A36D1</string>
+	</array>
+	<key>Last Viewed Section</key>
+	<array/>
+	<key>Library RBSplitView Layout</key>
+	<string>2 795 -352.25H</string>
+	<key>LibraryPanel.Settings</key>
+	<dict>
+		<key>LibraryPanel.HiddenColumns</key>
+		<array/>
+		<key>LibraryPanel.SelectedFilter</key>
+		<integer>0</integer>
+		<key>LibraryPanel.SortDescending</key>
+		<false/>
+		<key>LibraryPanel.SortKey</key>
+		<string>CCAsset Title</string>
+		<key>LibraryPanel.TableSettings</key>
+		<dict>
+			<key>CCAsset Creation Date</key>
+			<array>
+				<real>85</real>
+				<integer>6</integer>
+			</array>
+			<key>CCAsset Date Added</key>
+			<array>
+				<real>83</real>
+				<integer>7</integer>
+			</array>
+			<key>CCAsset File Size</key>
+			<array>
+				<real>45</real>
+				<integer>4</integer>
+			</array>
+			<key>CCAsset Has Note</key>
+			<array>
+				<real>20</real>
+				<integer>1</integer>
+			</array>
+			<key>CCAsset Instance Count</key>
+			<array>
+				<real>35</real>
+				<integer>3</integer>
+			</array>
+			<key>CCAsset Is File Alias</key>
+			<array>
+				<real>20</real>
+				<integer>0</integer>
+			</array>
+			<key>CCAsset Kind</key>
+			<array>
+				<real>28</real>
+				<integer>8</integer>
+			</array>
+			<key>CCAsset Last Modified Date</key>
+			<array>
+				<real>85</real>
+				<integer>5</integer>
+			</array>
+			<key>CCAsset Title</key>
+			<array>
+				<real>200</real>
+				<integer>2</integer>
+			</array>
+		</dict>
+	</dict>
+	<key>Main RBSplitView Layout</key>
+	<string>3 212.958 933.098 280</string>
+	<key>Normal Window Layout</key>
+	<string>{{60, 95}, {1428, 900}}</string>
+	<key>Organizer RBSplitView Layout</key>
+	<string>2 102H 772</string>
+	<key>Projects RBSplitView Layout</key>
+	<string>2 795 -252.636H</string>
+</dict>
+</plist>

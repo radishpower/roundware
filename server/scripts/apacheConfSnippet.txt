@@ -1,0 +1,10 @@
+    <Files roundware/scapes.py>
+            SetHandler fastcgi-script
+    </Files>
+
+    <Files roundware/roundware.py>
+            SetHandler fastcgi-script
+    </Files>
+    FastCgiServer /var/www/roundware/scapes.py -processes 4 -socket /tmp/fcgi2.sock
+    FastCgiServer /var/www/roundware/roundware.py -processes 4 -socket /tmp/fcgi.sock
+

@@ -1,0 +1,24 @@
+RoundwareLib (RWLib) Coding Guidelines
+--------------------------------------
+
+- File must start with open source copyright header.
+- Name of (externally visible) classes must start with 'RW'.
+- Don't put client app specific stuff in the shared library.
+- Keep things in the shared library generic.
+- When in doubt keep the code in the app, until proven re-usable.
+- Local variables: Start name with 'm' (module), eg. mGeocoder.
+- Use RWHtmlLog for logging.
+	- RWHtmlLog.e calls must always be done (serious errors).
+	- RWHtmlLog.w calls must always be done (warnings).
+	- RWHtmlLog.i can be used for debugging, toggled with D boolean.
+- Put all user text messages in resources.
+- Log messages can go in the code but must be in english.
+- Use TAG and D static variables in every class for debugging.
+- Stick to formatting used in all files.
+- Try to fix warnings early.
+- Always fix errors before committing code, obviously.
+- Leave to do comments in the code, unless you have resolved them.
+- Constant names should be all uppercase with underscores.
+- It is acceptable to gradually improve code documentation...
+- Carefully consider visibility of methods since it is a library.
+- Be aware that things might be shared between simultaneously running apps.

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Apache HTTP">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../RoundwareLib/lib/apache-mime4j-0.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../RoundwareLib/lib/commons-io-1.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../RoundwareLib/lib/httpmime-4.0.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

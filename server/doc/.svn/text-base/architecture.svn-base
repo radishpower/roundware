@@ -1,0 +1,79 @@
+Here's an overview of the Roundware architecture.  Basically, a web service is
+called, forks a process which generates audio. This audio is sent to an icecast
+server. The process reads continuously from the database, the file system for
+audio, and makes calls to the icecast admin page while sending its audio
+stream. It also checks dbus messages for updates it needs to recieve from the
+web service.
+
+Stream Object:
+Let's start from the RoundStream class, located in stream.py. This is where the
+whole project is centered around. The stream class accepts a sessionid, a
+media format, and a request on startup.
+
+The sessionid is the ID that has been created to identify the stream. The
+stream has to know which stream it is for several reasons. One is that it should
+report which stream it is when making important log entries, like when it is
+closing down. Two is that it's used when the stream creates an icecast client
+connection to stream its output to. It bases the URL it creates on the sessiond
+ID. Finally every stream needs a sessionid so that we may find the proper
+stream to send updates to when they are updated.
+
+The request is a dictionary of the request keys that are pertinent to what
+audio the user wants to here (categoryids, questionids, subcategoryids, ageid,
+genderids, demographicsids, usertypeids) and where that user is (latitude,
+longitude) these all play a role in which recording files are played.
+
+The audio format is the simplest. It is just past through to the sink to define
+whether the audio is in MP3 or OGG format.
+
+Creation:
+The stream is created by instantiating the object. Walking backwards from there
+it's the streamscript that instantiates a stream and then becomes a background
+process. You can run this script with the arguments on the command line just
+to make a stream. This is a great debugging tool, especially when used in
+foreground mode. Walking backward from there, the streamscript, in actual
+production code, is run from a web service which accepts the arguments via
+POST or GET. So, basically, you call a web service with a bunch of arguments,
+they are turned into command line arugments, and passed to a script that is
+forked off. The web service terminates, sending back the sessionid and URL of
+the stream and the forked process plays the audio to icecast.
+
+With that data, the stream is created. The stream pulls from two major sources
+on creation. It pulls compositions from the database and also speakers.
+Compositions are where the recordings are played and speakers are where the
+background audio is played. All the speakers and compositions are pulled
+together and mixed (in the audio sense) in an adder (a gstreamer object)
+then it's sent to a sink specialized for roundware that encodes it to the
+right format and sends it to the icecast server.
+
+Cleanup:
+A stream sets up a periodic check to see if anyone is listening and also checks
+the last time there was any stimulus sent to the stream. If it's been a long
+enough time without anyone listening or sending stimulus to the stream, the
+stream cleans itself up and closes down. The stimulus can be an update to the
+request, a change in location, or a heartbeat, which is a special kind of
+stimulus meant only to trigger an update to the last time a stimulus was seen
+so the stream doesn't die.
+
+Updates:
+The next major piece of the puzzle is how the updates happen. This is done using
+dbus for interprocesses communication. Remember that the stream is a forked
+process, running independantly on the server, and sending its audio to icecast.
+It checks itself for whether or not it should be cleaned up. So it's fully
+separated. It sets up a listener for a dbus socket and listens for messages
+pertaining to its sessiondid as well. When the client calls a web service to
+update a stream, it passes the arguments and the sessionid. This gets turned
+into a dbus broadcast and the streams pick it up. If the sessionid matches
+for a stream, that stream acts on the update, and the other streams ignore the
+message. This dbus listener is setup by the streamscript right after the stream
+is instantiated.
+
+This is the basic structure of the listening system. There's a lot of deapth
+to how recordings are played, chosen, faded, panned, and a lot of nity grity
+about gstreamer low-level stuff. These things are fairly well encapsulated
+and able to be understood in isolation. The icecast admin for checking on the
+streams activity, the speakers mixer based on geolocation, the compositions
+playing the recordings, which recordings playing in the recording collection,
+the sink that sends the data to the icecast are all separate modules of classes
+that the stream relies on and you can dive deeper into whichever part you need
+to understand better.

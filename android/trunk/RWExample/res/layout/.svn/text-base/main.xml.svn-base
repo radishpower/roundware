@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@drawable/rw_splash"
+        >
+
+    <!-- Header -->
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:padding="5dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:text="@string/main_activity_label"
+            android:background="#000"
+            />
+
+    <!-- info lines -->
+    <TextView
+            android:id="@+id/header_line1_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:textAppearance="@android:style/TextAppearance.Small.Inverse"
+            android:text=""
+            />
+    <TextView
+            android:id="@+id/header_line2_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+            android:textAppearance="@android:style/TextAppearance.Medium.Inverse"
+            android:text=""
+            />
+    
+    <!-- Spacer -->
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            />
+
+    <!-- Button bar at the bottom -->
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+        <Button
+                android:id="@+id/listen_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/listen"
+                />
+        <Button
+                android:id="@+id/speak_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/speak"
+                />
+        <Button
+                android:id="@+id/exit_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/quit"
+                />
+    </LinearLayout>
+
+</LinearLayout>
+

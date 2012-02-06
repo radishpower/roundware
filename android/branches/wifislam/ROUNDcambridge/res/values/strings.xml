@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ROUND:C</string>
+
+	<!-- debug Rob:  0CW_UF3tw5QW6n3qqUVya-AOQIn1TRM6cC9pD1w -->
+	<!-- deploy Halsey: 08btgHo3D3iJzWGkRruy4TqH1TNgHd0BItfdv1g -->
+	<string name="google_maps_api_key">08btgHo3D3iJzWGkRruy4TqH1TNgHd0BItfdv1g</string>
+
+    <string name="notification_title">R:C</string>
+    <string name="notification_default_text">Press to return to ROUND:Cambridge</string>
+
+	<string name="nav_title_main">R:C - Home</string>
+	<string name="nav_title_listen">R:C - Listen</string>
+	<string name="nav_title_speak">R:C - Speak</string>
+	<string name="nav_title_thankyou">R:C - Thank You!</string>
+
+	<string name="info_menuitem">About</string>
+	<string name="preferences_menuitem">Settings</string>
+	<string name="exit_menuitem">Exit</string>
+
+	<string name="preferences">Settings</string>
+	<string name="record_counter_zero">0:00</string>
+	<string name="confirm_title">Confirm</string>
+	<string name="confirm_message">Do you want to submit your last recording?</string>
+	<string name="confirm_sharing_title">Tell a Friend</string>
+	<string name="confirm_sharing_message">Would you like to inform your friends about the awesome recording you just contributed?</string>
+	<string name="listening_to_sounds">You are listening to ROUND:Cambridge.</string>
+	<string name="listening_to_voices">You are listening to contributions to ROUND:Cambridge from</string>
+	<string name="men">men</string>
+	<string name="women">women</string>
+	<string name="boys">boys</string>
+	<string name="girls">girls</string>
+	<string name="and">and</string>
+	<string name="comma">,</string>
+	<string name="period">.</string>
+	<string name="error_title">R:C Error</string>
+	<string name="message_title">R:C Message</string>
+	<string name="connecting_to_server_title">Initializing</string>
+	<string name="connecting_to_server_message">Establishing connection to the server. One moment please...</string>
+	<string name="communicating_with_server">Communicating with Server...</string>
+
+	<string name="sharing_subject">Roundware Sharing</string>
+	<string name="sharing_chooser_title">Share Recording</string>
+	
+	<string name="updating_available_recordings">Updating...</string>
+	<string name="available_recordings_STRING">Available Recordings: %s</string>
+	
+	<string name="playing_static_soundtrack_msg">
+		You are listening to a sample audio stream. Please go to
+		Cambridge, MA, USA to experience the real deal!
+	</string>
+	
+	<!-- Home Screen -->
+	<string name="current_recordings_STRING">Current Recordings: %s</string>
+	<string name="current_queued_INT">Messages Queued: %d</string>
+	<string name="lbl_clear_queue_and_exit">Cleanup &amp; Exit</string>
+	<string name="credits">
+		<b>Concept</b>
+		\nHalsey Burgund
+		\n\n
+		\n<b>Artwork</b>
+		\nBenjamin Dauer
+		\nHalsey Burgund
+		\n\n
+		\n<b>Android Programming</b>
+		\nRob Knapen
+		\n\n
+		\n<b>Server Programming</b>
+		\nMike MacHenry
+		\nBen McAllister
+		\n
+		\n\n
+		\n(Press the top right X icon to go back)
+	</string>
+
+	<!-- Listen -->
+	<string name="listen_what_question_header">What do you want to listen to?</string>
+	<string name="listen_who_question_header">Who do you want to listen to?</string>
+	<string name="listen_what_types_question_header">What types of people do you want to hear?</string>
+	<string name="listen_question_scroll_message">Hint: Scroll down list for more choices</string>
+	
+	<!-- Speak -->
+	<string name="speak_who_question_header">Who is talking?</string>
+	<string name="speak_what_type_question_header">What category best describes you?</string>
+	<string name="speak_what_question_header">What do you want to talk about?</string>
+	<string name="speak_question_scroll_message">Hint: Scroll down list for more choices</string>
+	<string name="speak_recording_submitted_message">Thank you! Your recording is currently being uploaded to ROUND:Cambridge. It will be available momentarily!</string>
+	
+	<string name="enable_gps_message">
+	Please enable the GPS on your device for the best
+	experience with the ROUND:Cambridge app!
+	</string>
+	
+	<string name="enable_location_provider_message">
+	Please enable the GPS and/or the Wi-Fi or mobile network
+	location on your device for the best experience with the 
+	ROUND:Cambridge app!
+	</string>
+
+	<string name="legal_notice_title">Legal Notice</string>
+	<string name="legal_notice">
+	I agree that any recordings I make using the ROUND:Cambridge app 
+	will become a part of the ROUND:Cambridge exhibit and can be used 
+	by Halsey Burgund for any related purpose.
+	\n\n
+	Thanks and enjoy!
+	</string>	
+	
+	<!-- Version Info -->
+	<string name="version_text">
+	Welcome to ROUND:Cambridge!
+    \nYou have version 1.0.2
+	\n
+	\nThis app is your portal into the participatory 
+	audio world of the \'ROUND:Cambridge\' installation
+	by Halsey Burgund.  This project is commissioned
+	by the Cambridge Arts Council and is accessible
+	from anywhere within the city limits of Cambridge,
+	MA, USA.
+	\nPlease listen, add your own comments and explore
+	the city and the public art within it.
+	\n
+	\nSpecial thanks to:
+	\nRob Knapen - Android app development
+	\nMike MacHenry and Ben McAllister - server development
+	\nJoe Zobkiw - iPhone app development
+	\nBenjamin Dauer - additional graphics 
+	\n
+	\nMore info at: http://halseyburgund.com/work/r2c
+	\n
+	</string>
+
+</resources>

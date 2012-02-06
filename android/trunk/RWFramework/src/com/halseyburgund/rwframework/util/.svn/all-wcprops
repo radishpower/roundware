@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/roundware/!svn/ver/1050/android/trunk/RWFramework/src/com/halseyburgund/rwframework/util
+END
+RWSharedPrefsHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/roundware/!svn/ver/1050/android/trunk/RWFramework/src/com/halseyburgund/rwframework/util/RWSharedPrefsHelper.java
+END
+RWListItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/roundware/!svn/ver/1009/android/trunk/RWFramework/src/com/halseyburgund/rwframework/util/RWListItem.java
+END
+RWList.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/roundware/!svn/ver/1050/android/trunk/RWFramework/src/com/halseyburgund/rwframework/util/RWList.java
+END
+RWListAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/roundware/!svn/ver/986/android/trunk/RWFramework/src/com/halseyburgund/rwframework/util/RWListAdapter.java
+END
+RWMultipartEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/roundware/!svn/ver/1050/android/trunk/RWFramework/src/com/halseyburgund/rwframework/util/RWMultipartEntity.java
+END

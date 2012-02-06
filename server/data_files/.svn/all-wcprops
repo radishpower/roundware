@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/roundware/!svn/ver/863/server/data_files
+END
+org.roundware.StreamScript.conf
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/roundware/!svn/ver/278/server/data_files/org.roundware.StreamScript.conf
+END
+rw_test_audio1.wav
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/roundware/!svn/ver/862/server/data_files/rw_test_audio1.wav
+END
+roundware_base.sql
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/roundware/!svn/ver/863/server/data_files/roundware_base.sql
+END
+schema.sql
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/roundware/!svn/ver/585/server/data_files/schema.sql
+END

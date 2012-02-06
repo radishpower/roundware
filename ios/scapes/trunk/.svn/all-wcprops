@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/roundware/!svn/ver/664/ios/scapes/trunk
+END
+Protocol
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/roundware/!svn/ver/651/ios/scapes/trunk/Protocol
+END
+Scapes-Info.plist
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/roundware/!svn/ver/661/ios/scapes/trunk/Scapes-Info.plist
+END
+Scapes_Prefix.pch
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/roundware/!svn/ver/651/ios/scapes/trunk/Scapes_Prefix.pch
+END
+Entitlements.plist
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/roundware/!svn/ver/651/ios/scapes/trunk/Entitlements.plist
+END
+Changes
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/roundware/!svn/ver/651/ios/scapes/trunk/Changes
+END
+Notes
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/roundware/!svn/ver/651/ios/scapes/trunk/Notes
+END

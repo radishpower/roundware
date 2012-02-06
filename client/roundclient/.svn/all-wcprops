@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/roundware/!svn/ver/363/client/roundclient
+END
+client.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/roundware/!svn/ver/361/client/roundclient/client.py
+END
+record.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/roundware/!svn/ver/334/client/roundclient/record.py
+END
+webservice.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/roundware/!svn/ver/355/client/roundclient/webservice.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/roundware/!svn/ver/2/client/roundclient/__init__.py
+END
+settings.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/roundware/!svn/ver/323/client/roundclient/settings.py
+END
+update.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/roundware/!svn/ver/363/client/roundclient/update.py
+END
+gui_helper.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/roundware/!svn/ver/351/client/roundclient/gui_helper.py
+END
+MultipartPostHandler.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/roundware/!svn/ver/326/client/roundclient/MultipartPostHandler.py
+END
+play.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/roundware/!svn/ver/355/client/roundclient/play.py
+END

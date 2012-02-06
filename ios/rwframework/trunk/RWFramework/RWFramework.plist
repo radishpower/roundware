@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>project_id</key>
+	<string>1</string>
+	<key>reverse_domain</key>
+	<string>org.roundware</string>
+	<key>base_url</key>
+	<string>http://174.129.242.219/roundware/?</string>
+	<key>reachability_host_name</key>
+	<string>listenfaster.com</string>
+	<key>distance_filter_in_meters</key>
+	<string>5.</string>
+	<key>gps_idle_interval_in_seconds</key>
+	<string>15</string>
+	<key>recorded_file_name</key>
+	<string>rw.caf</string>
+	<key>converted_file_name</key>
+	<string>rw.m4a</string>
+	<key>max_recording_length</key>
+	<string>10</string>
+	<key>listen_enabled</key>
+	<true/>
+	<key>geo_listen_enabled</key>
+	<true/>
+	<key>speak_enabled</key>
+	<true/>
+	<key>geo_speak_enabled</key>
+	<true/>
+	<key>listen_questions_dynamic</key>
+	<false/>
+	<key>speak_questions_dynamic</key>
+	<false/>
+</dict>
+</plist>

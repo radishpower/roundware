@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/roundware/!svn/ver/1072/web/htdocs
+END
+proxy.php
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/roundware/!svn/ver/1069/web/htdocs/proxy.php
+END
+.htaccess
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/roundware/!svn/ver/1062/web/htdocs/.htaccess
+END
+index.php
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/roundware/!svn/ver/1062/web/htdocs/index.php
+END

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleDisplayName</key>
+	<string>${PRODUCT_NAME}</string>
+	<key>CFBundleExecutable</key>
+	<string>${EXECUTABLE_NAME}</string>
+	<key>CFBundleIconFile</key>
+	<string>Icon.png</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.halseysolutions.r2c</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>${PRODUCT_NAME}</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSMainNibFile</key>
+	<string>MainWindow</string>
+	<key>SHKBitLyKey</key>
+	<string>R_8dc58293ef79577f677cf3c19c7bcf38</string>
+	<key>SHKBitLyLogin</key>
+	<string>hburgund</string>
+	<key>SHKFacebookKey</key>
+	<string>235375849810262</string>
+	<key>SHKFacebookSecret</key>
+	<string>e3d5f6bb87f43e3853d1bf4d5926f438</string>
+	<key>SHKMyAppName</key>
+	<string>ROUND:Cambridge</string>
+	<key>SHKMyAppURL</key>
+	<string>http://halseyburgund.com</string>
+	<key>SHKTwitterCallbackUrl</key>
+	<string>http://halseyburgund.com</string>
+	<key>SHKTwitterConsumerKey</key>
+	<string>HcMHIfDLCNMVhQXt1haUnw</string>
+	<key>SHKTwitterSecret</key>
+	<string>gZ8kXGnI3WtG3Nz35aXw7nJZJBoZqhMwW2bCxS4m3vk</string>
+	<key>UIApplicationExitsOnSuspend</key>
+	<true/>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>gps</string>
+		<string>microphone</string>
+	</array>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleBlackTranslucent</string>
+</dict>
+</plist>

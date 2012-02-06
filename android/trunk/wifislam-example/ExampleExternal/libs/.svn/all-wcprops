@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/roundware/!svn/ver/1083/android/trunk/wifislam-example/ExampleExternal/libs
+END
+libthrift.jar
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/roundware/!svn/ver/1083/android/trunk/wifislam-example/ExampleExternal/libs/libthrift.jar
+END
+guava-r09.jar
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/roundware/!svn/ver/1083/android/trunk/wifislam-example/ExampleExternal/libs/guava-r09.jar
+END
+wifislam.jar
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/roundware/!svn/ver/1083/android/trunk/wifislam-example/ExampleExternal/libs/wifislam.jar
+END
+slf4j-android.jar
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/roundware/!svn/ver/1083/android/trunk/wifislam-example/ExampleExternal/libs/slf4j-android.jar
+END
+commons-compress-1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/roundware/!svn/ver/1083/android/trunk/wifislam-example/ExampleExternal/libs/commons-compress-1.1.jar
+END
+gson-2.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/roundware/!svn/ver/1083/android/trunk/wifislam-example/ExampleExternal/libs/gson-2.0.jar
+END

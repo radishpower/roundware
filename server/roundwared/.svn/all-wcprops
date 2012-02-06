@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/roundware/!svn/ver/911/server/roundwared
+END
+gpsposn.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/roundware/!svn/ver/514/server/roundwared/gpsposn.py
+END
+stream.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/roundware/!svn/ver/596/server/roundwared/stream.py
+END
+icecast2.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/roundware/!svn/ver/354/server/roundwared/icecast2.py
+END
+gpsmixer.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/roundware/!svn/ver/911/server/roundwared/gpsmixer.py
+END
+roundfilesrc.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/roundware/!svn/ver/458/server/roundwared/roundfilesrc.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/roundware/!svn/ver/29/server/roundwared/__init__.py
+END
+settings.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/roundware/!svn/ver/567/server/roundwared/settings.py
+END
+discover_audiolength.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/roundware/!svn/ver/309/server/roundwared/discover_audiolength.py
+END
+convertaudio.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/roundware/!svn/ver/354/server/roundwared/convertaudio.py
+END
+daemon.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/roundware/!svn/ver/255/server/roundwared/daemon.py
+END
+composition.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/roundware/!svn/ver/574/server/roundwared/composition.py
+END
+rounddbus.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/roundware/!svn/ver/567/server/roundwared/rounddbus.py
+END
+roundexception.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/roundware/!svn/ver/309/server/roundwared/roundexception.py
+END
+server.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/roundware/!svn/ver/911/server/roundwared/server.py
+END
+roundgetopt.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/roundware/!svn/ver/249/server/roundwared/roundgetopt.py
+END
+gnomevfsmp3src.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/roundware/!svn/ver/911/server/roundwared/gnomevfsmp3src.py
+END
+report_failure.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/roundware/!svn/ver/29/server/roundwared/report_failure.py
+END
+db.py
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/roundware/!svn/ver/823/server/roundwared/db.py
+END
+recording_collection.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/roundware/!svn/ver/524/server/roundwared/recording_collection.py
+END

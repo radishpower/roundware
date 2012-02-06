@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/CloudFiles
+END
+ASICloudFilesCDNRequest.m
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/CloudFiles/ASICloudFilesCDNRequest.m
+END
+ASICloudFilesContainer.h
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/CloudFiles/ASICloudFilesContainer.h
+END
+ASICloudFilesObjectRequest.m
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/CloudFiles/ASICloudFilesObjectRequest.m
+END
+ASICloudFilesObject.h
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/CloudFiles/ASICloudFilesObject.h
+END
+ASICloudFilesContainer.m
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/CloudFiles/ASICloudFilesContainer.m
+END
+ASICloudFilesRequest.h
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/CloudFiles/ASICloudFilesRequest.h
+END
+ASICloudFilesContainerRequest.h
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/CloudFiles/ASICloudFilesContainerRequest.h
+END
+ASICloudFilesContainerXMLParserDelegate.h
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/CloudFiles/ASICloudFilesContainerXMLParserDelegate.h
+END
+ASICloudFilesObject.m
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/CloudFiles/ASICloudFilesObject.m
+END
+ASICloudFilesCDNRequest.h
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/CloudFiles/ASICloudFilesCDNRequest.h
+END
+ASICloudFilesRequest.m
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/CloudFiles/ASICloudFilesRequest.m
+END
+ASICloudFilesObjectRequest.h
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/CloudFiles/ASICloudFilesObjectRequest.h
+END
+ASICloudFilesContainerRequest.m
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/CloudFiles/ASICloudFilesContainerRequest.m
+END
+ASICloudFilesContainerXMLParserDelegate.m
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/CloudFiles/ASICloudFilesContainerXMLParserDelegate.m
+END

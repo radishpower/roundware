@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/roundware/!svn/ver/749/ios/r2c/trunk/Other%20Sources/mogeneration-ShareKit-046/Classes/ShareKit/Sharers/Services/Evernote/Helpers/thrift/transport
+END
+TMemoryBuffer.m
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/roundware/!svn/ver/749/ios/r2c/trunk/Other%20Sources/mogeneration-ShareKit-046/Classes/ShareKit/Sharers/Services/Evernote/Helpers/thrift/transport/TMemoryBuffer.m
+END
+TTransportException.h
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/roundware/!svn/ver/749/ios/r2c/trunk/Other%20Sources/mogeneration-ShareKit-046/Classes/ShareKit/Sharers/Services/Evernote/Helpers/thrift/transport/TTransportException.h
+END
+TTransport.h
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/roundware/!svn/ver/749/ios/r2c/trunk/Other%20Sources/mogeneration-ShareKit-046/Classes/ShareKit/Sharers/Services/Evernote/Helpers/thrift/transport/TTransport.h
+END
+THTTPClient.h
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/roundware/!svn/ver/749/ios/r2c/trunk/Other%20Sources/mogeneration-ShareKit-046/Classes/ShareKit/Sharers/Services/Evernote/Helpers/thrift/transport/THTTPClient.h
+END
+TTransportException.m
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/roundware/!svn/ver/749/ios/r2c/trunk/Other%20Sources/mogeneration-ShareKit-046/Classes/ShareKit/Sharers/Services/Evernote/Helpers/thrift/transport/TTransportException.m
+END
+TMemoryBuffer.h
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/roundware/!svn/ver/749/ios/r2c/trunk/Other%20Sources/mogeneration-ShareKit-046/Classes/ShareKit/Sharers/Services/Evernote/Helpers/thrift/transport/TMemoryBuffer.h
+END
+THTTPClient.m
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/roundware/!svn/ver/749/ios/r2c/trunk/Other%20Sources/mogeneration-ShareKit-046/Classes/ShareKit/Sharers/Services/Evernote/Helpers/thrift/transport/THTTPClient.m
+END

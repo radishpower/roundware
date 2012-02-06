@@ -1,0 +1,312 @@
+TODO
+
+AMERICAN STORIES STUFF: manual location
+
+- consider bubbling alert message opportunity to app so framework doesn't show any alerts itself
+- client-changeable-url
+- make tag info visible to app so they can provide custom UI as opposed to using framework's tag editor
+- reset default tags flag - how should this work?
+- implement server error messages (RW_ERROR, RW_USER_MESSAGE) - ben discussion?
+- don't show alerts in framework, instead bubble them all up to the app
+- get language at startup and pass to server in get_config?
+- server bogus json responses? 
+
+- stop_session logEvent - how to manage?
+- http timeout? can it be altered. if so manage this via a config var
+- make storage of NSUserDefaults prefix with rw to not pounce on other stuff
+- handle playback interruptions bubbling up to UI?
+- implement reset_tag_defaults_on_startup flag	
+- if stream becomes unplayable - currently requires restart of app - figure out how to make nicer
+- twitter stuff - create envelope before conversion and store envelope id in queue
+- implement built-in Twitter account access for iOS5
+- implement "force reload" when saving default tag data, etc.
+- localize error messages in framework esp those via alertOK method
+
+// COMPLETED -----------------------------------------------------------------------------------
+
+√ only decrement badge count upon successful submission
+√ tweak setting/checking of _processingItem NO/YES flag
+√ suppress error alert on submitFileFailure
+
+√ date format now 2012-01-09 00:42:02 +0000
+√ event logging
+√ change lat/lon 0,0 to be an empty string
+
+√ add timestamp of when recording was created (to be defined: client_time format tbd)
+
+√ offline mode (checked in but to be reviewed and tightened slightly)
+	√ anywhere i call base, i need to not call it if offline otherwise it will just fail anyway
+	• make sure app opens at least once online (warn if not)
+	√ including support caching most recent config data from server which we do by storing to NSUSerDefaults
+	√ queue things other than file uploads if during offline mode? what else could need to be queued? tweets need a UI so they really can't be queued IMO.
+	√ handle app starting in online mode but then going offline, stay offline until app restarts
+	√ implement isOffline or isOnline mechanism similar to Rob
+	√ can't share in offline mode (managed via device history later on)
+	
+	NOTES & THOUGHTS
+	√ the framework should handle tracking reachbability and simply doesn't make calls to the base if offline
+	√ as long as the app connects once to the server we will get the config/tags and store them locally
+	√ if we have a device_id then we know the app connected at least once to get this basic info
+	√ this is a requirement 
+	√ if the app is in offline mode we can only use the last cached data we received to allow it to function
+	√ without a network connection listen will not be possible if listen is enabled
+	√ speak will be possible and audio will be queued as it is now - tags being used via cache (NSUserDefaults)
+	√ tweeting will not be possible without a network connection but then the issue comes, how to manage tweeting (and all social sharing)
+	√ currently the envelope is created and then the asset is added in (more or less) one fell swoop based on the queue timer and position in queue. we actually need to change this so the envelope is created when the checkmark is tapped and then the user can tweet before the queue timer actually gets to upload the file. mind you, this doesn't work for offline mode - the envelope can't be created until we are back online and at that point you might as well wait until right before the thing is uploaded because if someone is offline and records 20 things the last thing they want is to be offered to tweet 20 times in a row. i think we need to re-think sharing slightly and figure out what is the best way to handle this. it might help if the sharing stuff didn't require the envelope id but instead was something the app itself could generate based on the device_id and file_upload name or somesuch? I dunno...but I think we are missing something in the current workflow - it seems convoluted.
+	√ i don't think any other server calls need to be queued - do they? file uploads are queued for management online when they are created offline YES but that may really be it. 
+	
+	*********************
+	√ swap the way envs are created so they are created right away
+	√ put checks for "online/offline" in server calls and queue up instead of making call right away if offline?
+	
+	---
+	
+	√ always save env id with queued env, but when offline env id is set to "" (-1 on android)
+	√ if "" (it was created offline) so when back online create new env id and do not send sharing msg to the app
+	√ if online then env id will be created at the time submit is pressed (audio queued) and sharing message WILL be sent
+
+√ added upload indicator (spinny thing) while an actual upload is occurring
+√ implement sharing delegate method when env id is created - send sharing url and message to delegate as separate params
+	• - (void)sharingMessage:(NSString*)message url:(NSString*)url;
+√ implement getTagsSuccess/getTagsFailure:error to UI level
+√ implement heartbeatSuccess/heartbeatFailure:error to UI level
+√ implement modifyStreamSuccess/modifyStreamFailure:error to UI level
+√ implement createEnvelopeSuccess/createEnvelopeFailure to UI level
+√ implement addAssetToEnvelopeSuccess/addAssetToEnvelopeFailure to UI level
+√ implement all server messages back up to UI with Success/Failure methods
+√ make badge number showing a method that the app can call into the framework so it can control if it gets displayed
+√ display badge showing number of items needing to be uploaded
+√ right/left swipe gesture recognizer to switch between tag lists more easily
+√ upload completion upon quit
+√ make sure audio continues to play after phone sleeps
+√ keep track of device id (NSUserDefaults)
+√ save most recent config to NSUserDefaults, when loading from plist, look in NSUserDefaults for override first
+√ implement queued uploads
+√ send listen tags right away upon being changed
+√ disable tag editor for modes that are not enabled (ie: listen_enabled, speak_enabled)
+√ disable tag buttons by default and enable once tags come back from server and/or are found locally
+√ sweep code and include tag_ids in all calls that support them
+√ set a flag  so modify_stream is only sent once request_stream returns successfully
+√ fixes for ben fixes (version, device_id (null) thing, GET vars, etc.)
+√ implement checks to make sure speak stuff is not called when speak not enabled (same for listen)
+√ implement get tags and display "Tags Begotten"
+√ tags handles all in framework, one call to show UI and adjust tags (wizardy-style next/prev and DONE button)
+
+
+/* DEVELOPMENT NOTES
+ 
+For playback of stream we can now simply use AVPlayer
+AVPlayer* player = [[AVPlayer playerWithURL:[NSURL URLWithString:@"http://scapesaudio.dyndns.org:8000/stream3874.mp3"]] retain];
+[player play];
+Be sure to check [AVPlayer status] and [AVPlayer error] as appropriate
+ 
+AVPlayerItem playerItem = [AVPlayer currentItem]
+AVAudioMix *audioMix = [playerItem audioMix]
+AVAudioMixInputParameters = [audioMix audioInputParameters]
+AVMutableAudioMixInputParameters setVolumeRampFromStartVolume:toEndVolume:timeRange:
+ 
+ 
+ pseudo-code
+ 
+ AVMutableAudioMix *fadeMix = [AVMutableAudioMix audioMix];
+ AVMutableAudioMixInputParameters *params = [AVMutableAudioMixInputParameters audioMixInputParameters];
+ [params setVolumeRampFromStartVolume:1.0 toEndVolume:0.0 timeRange:CMTimeRangeMake(CMTimeMake(0, 1), CMTimeMake(60, 1))];
+ [fadeMix setInputParameters:[NSArray arrayWithObject:params]];
+[MyAVPlayerItem setAudioMix: fadeMix];
+ 
+ 
+*/
+
+// MISC --------------------------------
+/*
+ 
+NSError* error = nil;
+[thing config:	categoryID:@"cID" subcategoryID:@"sID" error:&error];
+if (error)
+	NSLog(@"%@", [error localizedDescription]);
+
+ 
+ 
+typedef enum {
+    START_LISTEN,
+    STOP_LISTEN,
+    START_RECORD,
+    STOP_RECORD,
+    START_UPLOAD,
+    STOP_UPLOAD,
+    START_SESSION
+} kEventType;
+
+typedef enum {
+    AUDIO,
+    VIDEO,
+    IMAGE
+} kAssetType;
+
+typedef enum {
+    PATH,
+    BLOB,
+    TEXT
+} kAssetDataType;
+
+typedef enum {
+    SINGLE_SELECT,
+    MULTI_SELECT,
+    FREETEXT
+} kPromptInputType;
+
+
+@interface RWSessionInfo : NSObject
+	@property(nonatomic,assign) int sessionId;
+	@property(nonatomic,assign) NSURL* urlToStream;
+@end
+
+@interface RWClientConfigInfo : NSObject
+//tbd
+@end
+
+@interface RWServerConfigInfo : NSObject
+//tbd
+@end
+
+@interface RWMetaInfo : NSObject
+	@property(nonatomic,retain) NSDictionary* hints;
+	@property(nonatomic,retain) NSDictionary* tags;
+@end
+
+@interface RWLocationInfo : NSObject
+	@property(nonatomic,assign)float latitude;
+	@property(nonatomic,assign)float longitude;
+	@property(nonatomic,assign)float course;
+	@property(nonatomic,assign)float haccuracy;
+	@property(nonatomic,assign)float speed;
+@end
+
+@interface RWVersionInfo : NSObject
+	@property(nonatomic,assign)int major;
+	@property(nonatomic,assign)int minor;
+	@property(nonatomic,assign)int buildNumber;
+	@property(nonatomic,retain)NSString* name;
+@end
+
+@interface RWErrorInfo: NSObject
+	@property(nonatomic,retain) NSString* errorMsg;
+	//tbd
+@end
+
+@interface RWAssetInfo : NSObject
+	@property(nonatomic, assign)kAssetType* assetType;
+	@property(nonatomic, assign)kAssetDataType* assetDataType;
+	@property(nonatomic, retain)NSString* mimetype;
+	@property(nonatomic, retain)NSObject* asset;
+@end
+
+// ENVELOPE
+
+@interface RWUploadInfo : NSObject
+{
+	bool complete;
+	RWErrorInfo* error;
+}
+	@property(nonatomic,retain)NSString* path;
+	@property(nonatomic,retain)RWAssetInfo* assetInfo;
+	-(bool)isComplete;
+	-(RWErrorInfo*)getErrorInfo;
+@end
+
+@interface RWEnvelope : NSObject 
+	//Array of tags (RWMetaInfo)
+	@property(nonatomic,retain)NSDictionary* tags;
+	//Array of hints (RWMetaInfo)
+	@property(nonatomic,retain)NSDictionary* hints;
+	//Array of assets (RWAssetInfo)
+	@property(nonatomic,retain)NSArray* assets;
+	@property(nonatomic,retain)RWLocationInfo* locationInfo;
+@end
+
+// QUEUE
+
+@protocol RWQueueDelegate
+	-(void)uploadQueueProgress:(int)queueUploadsRemaining;
+	-(void)uploadQueueComplete;
+@end
+
+@interface RWQueueStatus : NSObject
+	//array of RWUploadInfo, ordered by time
+	@property(nonatomic,retain)NSArray* queue;
+	-(int)getCompleted;
+	-(int)getRemaining;
+@end
+
+
+
+@interface Roundware : NSObject<RWQueueDelegate>
+	-(RWVersionInfo*)getVersion; 
+
+	//requires that comp info be set 
+	-(void)init:(RWServerConfigInfo*)configInfo;
+
+	-(void)logEvent:(kEventType)eventId
+	   withMetaInfo:(RWMetaInfo*)metaInfo
+	withLocationInfo:(RWLocationInfo*) locationInfo;
+
+
+	-(void) startSession:(NSArray*) arrayOfMetaInfo
+			 forLocation:(RWLocationInfo*) locationInfo;
+
+
+	-(RWEnvelope*)createEnvelope;
+	-(void)addAssetToEnvelope:(RWUploadInfo*)uploadInfo;
+	-(void)closeEnvelope:(RWEnvelope*)envelope;
+
+	-(RWQueueStatus*)getQueueStatus;
+@end
+
+
+
+//THESE ARE NOTES:
+RWArray* tagCollection = [RWArray init];
+[tagCollection add:[RWMetaInfo initWithTag:@”lat” 123 withLong:456]];
+[tagCollection add:[RWMetaInfo initWithTag:@”prompt” YES]];
+
+
+RWArray* a = [RWObj getInfo:tagCollection]; 
+
+
+envelope
+
+operation = config, generate_listen_stream, submit_asset
+[tags] category_id, subcategory_id
+[asset]
+
+tag_envelope
+NSDictionary of attributes (optional)
+NSDictionary of tags	
+
+
+kind = listen,speak
+title = Gender
+type = singleselectlist,multiselectlist
+attributes = static,dynamic
+defaults = all,(1,3,5)
+
+key = gender
+values = male(1),female(2)
+
+gender 1
+
+---
+
+kind = listen,speak
+title = Questions to listen to
+type = singleselectlist,multiselectlist
+attributes = static,dynamic
+key = listen_questions
+values = What?(1), Who?(2), Why?(3)
+default = all,(1,3,5)
+
+listen_questions 1,3,7
+
+*/
+
+

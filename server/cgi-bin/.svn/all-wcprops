@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/roundware/!svn/ver/601/server/cgi-bin
+END
+listen.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/roundware/!svn/ver/572/server/cgi-bin/listen.py
+END
+control.py
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/roundware/!svn/ver/470/server/cgi-bin/control.py
+END
+roundware.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/roundware/!svn/ver/601/server/cgi-bin/roundware.py
+END

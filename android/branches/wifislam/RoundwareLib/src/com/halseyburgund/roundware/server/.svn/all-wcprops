@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/roundware/!svn/ver/1092/android/branches/wifislam/RoundwareLib/src/com/halseyburgund/roundware/server
+END
+RWActionData.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/roundware/!svn/ver/1092/android/branches/wifislam/RoundwareLib/src/com/halseyburgund/roundware/server/RWActionData.java
+END
+RWHttpManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/roundware/!svn/ver/1092/android/branches/wifislam/RoundwareLib/src/com/halseyburgund/roundware/server/RWHttpManager.java
+END
+RWAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/roundware/!svn/ver/1092/android/branches/wifislam/RoundwareLib/src/com/halseyburgund/roundware/server/RWAction.java
+END
+RWProtocol.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/roundware/!svn/ver/1092/android/branches/wifislam/RoundwareLib/src/com/halseyburgund/roundware/server/RWProtocol.java
+END
+RWActionQueue.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/roundware/!svn/ver/1092/android/branches/wifislam/RoundwareLib/src/com/halseyburgund/roundware/server/RWActionQueue.java
+END
+RWActionFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/roundware/!svn/ver/1092/android/branches/wifislam/RoundwareLib/src/com/halseyburgund/roundware/server/RWActionFactory.java
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/roundware/!svn/ver/604/server/bin
+END
+streamscript
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/roundware/!svn/ver/585/server/bin/streamscript
+END
+roundmirror
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/roundware/!svn/ver/604/server/bin/roundmirror
+END
+check_round
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/roundware/!svn/ver/84/server/bin/check_round
+END
+discover_audiolengths
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/roundware/!svn/ver/94/server/bin/discover_audiolengths
+END
+mirror
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/roundware/!svn/ver/558/server/bin/mirror
+END
+lobby_listener
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/roundware/!svn/ver/538/server/bin/lobby_listener
+END

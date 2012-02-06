@@ -1,0 +1,284 @@
+<?php
+
+require_once('KLogger.php');
+
+/**
+ * Roundware JSON handler: convert tags for a project from JSON into 
+ * an HTML form. 
+ * 
+ * $Id: Roundware.php 1086 2012-01-24 04:11:06Z zburke $
+ *
+ */
+class Roundware
+{
+	// identifier for this project
+	private $project_id = 1; 
+	
+	// curl object used to fetch remote URLs
+	private $curl = NULL; 
+	
+	// URL to retrieve data from 
+	private $url = 'http://rwstage.listenfaster.com/roundware/';
+	
+	// collection of device config params returned from the RW server
+	public $device  = NULL; 
+	public $rw_session_id = NULL; 
+	public $project = NULL;
+	
+	/** logger */ 
+	private $log = NULL; 
+	
+	private $CI = NULL; 
+	
+	
+	
+	/**
+	 * Initialize project by calling get_config on the RW server and saving the response. 
+	 * 
+	 * @param int $id PK of a project
+	 * @throws Exception if valid config objects (device, session, project) are not returned from RW
+	 */
+	function __construct(array $config = array())
+	{
+		$this->CI =& get_instance();
+		
+		$this->log = KLogger::syslog(KLogger::DEBUG, TRUE);
+		
+		if (isset($config['id']))
+		{
+			$this->project_id = $config['id'];
+		}
+		
+		// if we don't have an RW session-id, call get config and push the device and project
+		// values into the CI session. If we do have an RW session-id, pull those values 
+		// from the CI session. 
+		if (FALSE === ($this->rw_session_id = $this->CI->session->userdata('rw_session_id')))
+		{
+			$this->config(json_decode($this->do_curl('get_config')));
+			
+			$this->CI->session->set_userdata('rw_session_id', $this->rw_session_id);
+			$this->CI->session->set_userdata('rw_device',     $this->device);
+			$this->CI->session->set_userdata('rw_project',    $this->project);
+		}
+		else
+		{
+			$this->rw_session_id = $this->CI->session->userdata('rw_session_id');
+			$this->device     = $this->CI->session->userdata('rw_device');
+			$this->project    = $this->CI->session->userdata('rw_project');
+		}
+		
+		// we can't do anything without device, session and project objects 
+		if (! ($this->device && $this->rw_session_id && $this->project))
+		{
+			 throw new Exception("Roundware could not be initialized with the given project ID."); 
+		}
+		
+	}
+	
+	
+	
+	/**
+	 * Pull config objects from RW's response to a get_config request.
+	 * 
+	 * @param array $l array of objects decoded from JSON
+	 */
+	private function config(array $l)
+	{
+		foreach ($l as $i)
+		{
+			if (isset($i->device))
+			{
+				$this->device = $i->device;
+			}
+			
+			if (isset($i->session))
+			{
+				$this->rw_session_id = $i->session->session_id;
+			}
+			
+			if (isset($i->project))
+			{
+				$this->project = $i->project;
+			}
+		}
+	}
+	
+	
+	
+	/**
+	 * execute a curl request for the given project
+	 * 
+	 * @param string $operation
+	 * @param array $values hash of key => value pairs. 
+	 */
+	private function do_curl($operation, array $values = array())
+	{
+		$this->curl = curl_init();
+		
+		$request = $this->url . '?operation=' . $operation . '&project_id=' . $this->project_id 
+			. '&' . http_build_query($values);
+		
+		$this->log->logDebug($request); 
+
+		curl_setopt($this->curl, CURLOPT_URL, $request);
+		curl_setopt($this->curl, CURLOPT_RETURNTRANSFER, true);
+	
+		$ret = curl_exec($this->curl);
+		
+		$this->log->logDebug($ret); 
+			
+		return $ret;
+	}
+	
+	
+	
+	/**
+	 * Translate "speak" data for the given project into a form
+	 *
+	 * @param int $id PK of the project to retrieve
+	 * @return string 
+	 */
+	public function get_speak()
+	{
+		return $this->parse_response(json_decode($this->do_curl('get_tags'))->speak); 
+	}
+	
+	
+	
+	/**
+	 * Translate "listen" data for the given project into a form
+	 * 
+	 * @param int $id PK of the project to retrieve
+	 * @return string 
+	 */
+	public function get_listen()
+	{
+		return $this->parse_response(json_decode($this->do_curl('get_tags'))->{'listen'}); 
+	}
+	
+	
+	
+	/**
+	 * Return the raw JSON for get_tags_for_project
+	 */
+	public function get_tags()
+	{
+		return $this->do_curl('get_tags');
+	}
+	
+	
+	
+	/**
+	 * Given a stdClass object translated directly from JSON, convert
+	 * items labeled demo, ques and age into select-lists. 
+	 * 
+	 * @return string HTML form 
+	 */
+	private function parse_response($o)
+	{
+		$str = ''; 
+		foreach($o as $i)
+		{
+			$str .= $this->show_field($i);
+		}
+		
+		return $str; 
+	}
+	
+	
+	
+	/**
+	 * Convert the given object into an HTML select item. The object's code
+	 * property will be used as the name of the item; the options array will be 
+	 * translated into options with the tag_id property as the value and the value
+	 * property as the text. 
+	 * 
+	 * @param $i
+	 * 
+	 * @return string 
+	 */
+	private function show_field($i)
+	{
+		$str = '<li>' . $i->name . '<br />'; 
+		if (0 === strcasecmp($i->select, 'single'))
+		{
+			$str .= $this->show_single($i) . '</li>';
+		}
+		elseif (0 === strcasecmp($i->select, 'multi'))
+		{
+			$str .= $this->show_multi($i) . '</li>';
+		}
+		return $str; 
+	}
+	
+	
+	
+	/**
+	 * Return an HTML string representing a select-one, i.e. a select list
+	 * @param obj $item
+	 * @return string
+	 */
+	private function show_single($item)
+	{
+		$str = '<select name="' . $item->code . '" id="' . $item->code . '" class="tag">';
+		foreach ($item->options as $i)
+		{
+			$selected = '';
+			foreach ($item->defaults as $j)
+			{
+				if ($j == $i->tag_id)
+				{
+					$selected = 'selected'; 
+				}
+			}
+			
+			$str .= '<option value="'. $i->tag_id . '" ' . $selected . '>' . $i->value . '</option>';
+		}
+
+		$str .= '</select>';
+		return $str;
+	}
+
+	
+	
+	/**
+	 * Return an HTML string representing a select-multi, i.e. a list of checkboxes
+	 * @param obj $item
+	 * @return string
+	 */
+	private function show_multi($item)
+	{
+		$str = ''; 
+		foreach ($item->options as $i)
+		{
+			$checked = '';
+			foreach ($item->defaults as $j)
+			{
+				if ($j == $i->tag_id)
+				{
+					$checked = 'checked'; 
+				}
+			}
+			
+			$str .= '<input type="checkbox" name="' . $item->code . '[]" id="' . $item->code . '[]" class="tag" value="'. $i->tag_id . '" ' . $checked . '>' . $i->value . '<br />';
+		}
+
+		$str .= '</select></li>';
+		return $str;
+
+	}
+	
+	
+	
+	/**
+	 * return an array containing the results of a get_config call to RW
+	 */
+	public function rw_config()
+	{
+		return array('device' => $this->device, 'session' => $this->rw_session_id, 'project' => $this->project);
+	}
+	
+}
+
+
+/* end of /lib/application/libraries/Roundware.php */

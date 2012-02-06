@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/roundware/!svn/ver/431/server/vala
+END
+database.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/roundware/!svn/ver/411/server/vala/database.c
+END
+TestRoundStream.vala
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/roundware/!svn/ver/408/server/vala/TestRoundStream.vala
+END
+RoundStream.vala
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/roundware/!svn/ver/408/server/vala/RoundStream.vala
+END
+Composition.vala
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/roundware/!svn/ver/408/server/vala/Composition.vala
+END
+Types.vala
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/roundware/!svn/ver/414/server/vala/Types.vala
+END
+TestMySQL.vala
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/roundware/!svn/ver/431/server/vala/TestMySQL.vala
+END
+DBAccess_test.vala
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/roundware/!svn/ver/421/server/vala/DBAccess_test.vala
+END
+DBAccess.vala
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/roundware/!svn/ver/421/server/vala/DBAccess.vala
+END
+database.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/roundware/!svn/ver/411/server/vala/database.h
+END
+build_mysql.sh
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/roundware/!svn/ver/412/server/vala/build_mysql.sh
+END
+GnomeVFSMP3Src.vala
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/roundware/!svn/ver/385/server/vala/GnomeVFSMP3Src.vala
+END
+build_dbaccess.sh
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/roundware/!svn/ver/414/server/vala/build_dbaccess.sh
+END
+build.sh
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/roundware/!svn/ver/385/server/vala/build.sh
+END
+Debug.vala
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/roundware/!svn/ver/273/server/vala/Debug.vala
+END
+ServerUtils.vala
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/roundware/!svn/ver/261/server/vala/ServerUtils.vala
+END

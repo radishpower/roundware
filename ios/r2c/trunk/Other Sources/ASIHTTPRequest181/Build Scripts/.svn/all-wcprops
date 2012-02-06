@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/roundware/!svn/ver/749/ios/r2c/trunk/Other%20Sources/ASIHTTPRequest181/Build%20Scripts
+END
+fetch_ios_ghunit.rb
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/roundware/!svn/ver/749/ios/r2c/trunk/Other%20Sources/ASIHTTPRequest181/Build%20Scripts/fetch_ios_ghunit.rb
+END
+fetch_mac_ghunit.rb
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/roundware/!svn/ver/749/ios/r2c/trunk/Other%20Sources/ASIHTTPRequest181/Build%20Scripts/fetch_mac_ghunit.rb
+END
+set_version_number.rb
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/roundware/!svn/ver/749/ios/r2c/trunk/Other%20Sources/ASIHTTPRequest181/Build%20Scripts/set_version_number.rb
+END

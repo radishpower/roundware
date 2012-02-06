@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/roundware/!svn/ver/1076/rwserver
+END
+clean_rw.sh
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/roundware/!svn/ver/912/rwserver/clean_rw.sh
+END
+setup.py
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/roundware/!svn/ver/876/rwserver/setup.py
+END
+install_clean_rw.sh
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/roundware/!svn/ver/1038/rwserver/install_clean_rw.sh
+END

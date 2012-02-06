@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="libs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/commons-compress-1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/guava-r09.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/libthrift.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/gson-2.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/wifislam.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/slf4j-android.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

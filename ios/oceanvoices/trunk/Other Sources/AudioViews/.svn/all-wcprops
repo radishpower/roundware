@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/roundware/!svn/ver/666/ios/oceanvoices/trunk/Other%20Sources/AudioViews
+END
+LevelMeter.m
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/roundware/!svn/ver/666/ios/oceanvoices/trunk/Other%20Sources/AudioViews/LevelMeter.m
+END
+CALevelMeter.mm
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/roundware/!svn/ver/666/ios/oceanvoices/trunk/Other%20Sources/AudioViews/CALevelMeter.mm
+END
+GLLevelMeter.m
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/roundware/!svn/ver/666/ios/oceanvoices/trunk/Other%20Sources/AudioViews/GLLevelMeter.m
+END
+MeterTable.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/roundware/!svn/ver/666/ios/oceanvoices/trunk/Other%20Sources/AudioViews/MeterTable.cpp
+END
+LevelMeter.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/roundware/!svn/ver/666/ios/oceanvoices/trunk/Other%20Sources/AudioViews/LevelMeter.h
+END
+MeterTable.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/roundware/!svn/ver/666/ios/oceanvoices/trunk/Other%20Sources/AudioViews/MeterTable.h
+END
+GLLevelMeter.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/roundware/!svn/ver/666/ios/oceanvoices/trunk/Other%20Sources/AudioViews/GLLevelMeter.h
+END
+CALevelMeter.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/roundware/!svn/ver/666/ios/oceanvoices/trunk/Other%20Sources/AudioViews/CALevelMeter.h
+END

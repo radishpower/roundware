@@ -1,0 +1,38 @@
+----------------------------------------------------
+Server Protocol Specifics for ROUND: Cambridge (R2C)
+----------------------------------------------------
+
+The Roundware server protocol to be used is mostly the same as what is used
+by OceanVoices. This document describes only the differences specific for the
+R2C (ROUND: Cambridge) use.
+
+------
+Server
+------
+URL: http://r2c.dyndns.org:80
+
+--------
+Protocol
+--------
+Parameters and values:
+
+- config: "r2c"
+
+- categoryid: 10
+- subcategoryid: 10
+
+- demographicid: 
+	simpler this time with only 4 possibilities. I forget how they are 
+	implemented exactly, but this should be the info you need:
+
+	demographicid	ageid	genderid	name
+				1	 17	 	1	 		Woman
+				2	 17		2	 		Man
+				3	 16	 	1			Girl
+				4	 16	 	2	 		Boy
+
+- usertypeid: 
+	always 17. at this point, I don't want to categorize things by usertype, 
+	so we can bypass the usertype selection screens in both SPEAK and LISTEN 
+	modes (hopefully this is easy to comment out; let me know as it is possible
+	I would want to add it back, but unlikely for r2c)

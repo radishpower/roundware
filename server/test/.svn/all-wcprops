@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/roundware/!svn/ver/911/server/test
+END
+testNumRec.py
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/roundware/!svn/ver/599/server/test/testNumRec.py
+END
+urllib2_file.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/roundware/!svn/ver/569/server/test/urllib2_file.py
+END
+dbusClient.py
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/roundware/!svn/ver/421/server/test/dbusClient.py
+END
+testFailThrough.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/roundware/!svn/ver/521/server/test/testFailThrough.py
+END
+movelistenerspeedtest.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/roundware/!svn/ver/442/server/test/movelistenerspeedtest.py
+END
+dbusServer.py
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/roundware/!svn/ver/421/server/test/dbusServer.py
+END
+testServer.py
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/roundware/!svn/ver/911/server/test/testServer.py
+END
+testUploadAndProcessFile.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/roundware/!svn/ver/583/server/test/testUploadAndProcessFile.py
+END

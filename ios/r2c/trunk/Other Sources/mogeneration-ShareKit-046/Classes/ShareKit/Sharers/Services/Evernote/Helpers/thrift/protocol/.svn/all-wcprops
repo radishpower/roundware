@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/roundware/!svn/ver/749/ios/r2c/trunk/Other%20Sources/mogeneration-ShareKit-046/Classes/ShareKit/Sharers/Services/Evernote/Helpers/thrift/protocol
+END
+TProtocolException.m
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/roundware/!svn/ver/749/ios/r2c/trunk/Other%20Sources/mogeneration-ShareKit-046/Classes/ShareKit/Sharers/Services/Evernote/Helpers/thrift/protocol/TProtocolException.m
+END
+TBinaryProtocol.h
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/roundware/!svn/ver/749/ios/r2c/trunk/Other%20Sources/mogeneration-ShareKit-046/Classes/ShareKit/Sharers/Services/Evernote/Helpers/thrift/protocol/TBinaryProtocol.h
+END
+TProtocolFactory.h
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/roundware/!svn/ver/749/ios/r2c/trunk/Other%20Sources/mogeneration-ShareKit-046/Classes/ShareKit/Sharers/Services/Evernote/Helpers/thrift/protocol/TProtocolFactory.h
+END
+TBinaryProtocol.m
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/roundware/!svn/ver/749/ios/r2c/trunk/Other%20Sources/mogeneration-ShareKit-046/Classes/ShareKit/Sharers/Services/Evernote/Helpers/thrift/protocol/TBinaryProtocol.m
+END
+TProtocolUtil.h
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/roundware/!svn/ver/749/ios/r2c/trunk/Other%20Sources/mogeneration-ShareKit-046/Classes/ShareKit/Sharers/Services/Evernote/Helpers/thrift/protocol/TProtocolUtil.h
+END
+TProtocolException.h
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/roundware/!svn/ver/749/ios/r2c/trunk/Other%20Sources/mogeneration-ShareKit-046/Classes/ShareKit/Sharers/Services/Evernote/Helpers/thrift/protocol/TProtocolException.h
+END
+TProtocol.h
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/roundware/!svn/ver/749/ios/r2c/trunk/Other%20Sources/mogeneration-ShareKit-046/Classes/ShareKit/Sharers/Services/Evernote/Helpers/thrift/protocol/TProtocol.h
+END
+TProtocolUtil.m
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/roundware/!svn/ver/749/ios/r2c/trunk/Other%20Sources/mogeneration-ShareKit-046/Classes/ShareKit/Sharers/Services/Evernote/Helpers/thrift/protocol/TProtocolUtil.m
+END

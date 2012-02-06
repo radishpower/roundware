@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleDisplayName</key>
+	<string>Mtn. Ghosts</string>
+	<key>CFBundleDocumentTypes</key>
+	<array/>
+	<key>CFBundleExecutable</key>
+	<string>${EXECUTABLE_NAME}</string>
+	<key>CFBundleIconFile</key>
+	<string>Icon.png</string>
+	<key>CFBundleIconFiles</key>
+	<array>
+		<string>mg_icon_57b.png</string>
+		<string>mg_icon_57c.png</string>
+		<string>mg_icon_114b.png</string>
+		<string>mg_icon_114c.png</string>
+	</array>
+	<key>CFBundleIdentifier</key>
+	<string>com.halseysolutions.mtnghosts</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>${PRODUCT_NAME}</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array/>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSMainNibFile</key>
+	<string>MainWindow</string>
+	<key>SHKBitLyKey</key>
+	<string>R_8dc58293ef79577f677cf3c19c7bcf38</string>
+	<key>SHKBitLyLogin</key>
+	<string>hburgund</string>
+	<key>SHKFacebookKey</key>
+	<string>215370848514643</string>
+	<key>SHKFacebookSecret</key>
+	<string>743b8f848f1e4d1ab6524ffcec845fc9</string>
+	<key>SHKMyAppName</key>
+	<string>Mountain Ghosts</string>
+	<key>SHKMyAppURL</key>
+	<string>http://halseyburgund.com/work/mg/</string>
+	<key>SHKTwitterCallbackUrl</key>
+	<string>http://halseyburgund.com/work/mg/</string>
+	<key>SHKTwitterConsumerKey</key>
+	<string>5I01RaKm6HAWbRvGftS5A</string>
+	<key>SHKTwitterSecret</key>
+	<string>Wg8XepH7pQZ1wX14jX0r7pqNCZEzP1kPuLMj3BinHY</string>
+	<key>UIApplicationExitsOnSuspend</key>
+	<true/>
+	<key>UIPrerenderedIcon</key>
+	<true/>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>location-services</string>
+		<string>microphone</string>
+	</array>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleBlackTranslucent</string>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+	<key>UTExportedTypeDeclarations</key>
+	<array/>
+	<key>UTImportedTypeDeclarations</key>
+	<array/>
+</dict>
+</plist>

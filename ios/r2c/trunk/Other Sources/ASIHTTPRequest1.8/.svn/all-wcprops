@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/roundware/!svn/ver/749/ios/r2c/trunk/Other%20Sources/ASIHTTPRequest1.8
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/roundware/!svn/ver/749/ios/r2c/trunk/Other%20Sources/ASIHTTPRequest1.8/LICENSE
+END
+DONORS
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/roundware/!svn/ver/749/ios/r2c/trunk/Other%20Sources/ASIHTTPRequest1.8/DONORS
+END
+strict.xcconfig
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/roundware/!svn/ver/749/ios/r2c/trunk/Other%20Sources/ASIHTTPRequest1.8/strict.xcconfig
+END
+README.textile
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/roundware/!svn/ver/749/ios/r2c/trunk/Other%20Sources/ASIHTTPRequest1.8/README.textile
+END
+set_version_number.rb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/roundware/!svn/ver/749/ios/r2c/trunk/Other%20Sources/ASIHTTPRequest1.8/set_version_number.rb
+END
+clang.sh
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/roundware/!svn/ver/749/ios/r2c/trunk/Other%20Sources/ASIHTTPRequest1.8/clang.sh
+END

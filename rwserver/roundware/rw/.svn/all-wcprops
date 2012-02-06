@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/roundware/!svn/ver/1076/rwserver/roundware/rw
+END
+admin.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/roundware/!svn/ver/1060/rwserver/roundware/rw/admin.py
+END
+views.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/roundware/!svn/ver/1004/rwserver/roundware/rw/views.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/roundware/!svn/ver/873/rwserver/roundware/rw/__init__.py
+END
+tests.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/roundware/!svn/ver/873/rwserver/roundware/rw/tests.py
+END
+models.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/roundware/!svn/ver/1076/rwserver/roundware/rw/models.py
+END

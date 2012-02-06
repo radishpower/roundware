@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/roundware/!svn/ver/662/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/LICENSE
+END
+DONORS
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/DONORS
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/.gitignore
+END
+strict.xcconfig
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/strict.xcconfig
+END
+.gitattributes
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/.gitattributes
+END
+.gitmodules
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/.gitmodules
+END
+README.textile
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/README.textile
+END
+set_version_number.rb
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/set_version_number.rb
+END
+clang.sh
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/clang.sh
+END

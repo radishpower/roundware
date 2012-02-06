@@ -1,0 +1,40 @@
+/* 
+  Localizable.strings
+  RWExample
+
+  Created by Joe Zobkiw on 1/20/12.
+  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+
+	http://www.raywenderlich.com/2876/how-to-localize-an-iphone-app-tutorial
+ 
+	http://translate.google.com/#en|es|
+
+ */
+
+// Reachability
+NETWORK_NOT_REACHABLE = "Sin conexión de red";
+NETWORK_REACHABLE_VIA_WIFI = "Red accesible a través de WiFi";
+NETWORK_REACHABLE_VIA_WWAN = "Accesible a través de la red WWAN";
+
+// Audio
+PREPARING_AND_QUEUING = "Preparación y gestión de colas...";
+SUBMITTING = "la presentación de...";
+AUDIO_SUBMISSION_SUCCESSFUL = "Presentación de audio con éxito.";
+AUDIO_SUBMISSION_ERROR = "Presentación de error de audio.";
+
+// Tags
+LISTEN_TAGS_TITLE = "Escuche Tags";
+SPEAK_TAGS_TITLE = "Hablar Tags";
+
+// Errors
+CONNECTIVITY_ERROR = "Lo sentimos, pero hay una conexión o un problema de recursos. Por favor, reiniciar la aplicación y vuelva a intentarlo.";
+MUST_RECORD_BEFORE_PLAYBACK_ERROR = "Tiene que grabar algo antes de que pueda reproducir.";
+RECORDING_ALREADY_QUEUED_ERROR = "La grabación actual ya ha sido puesto en cola. Para hacer otra, pulse el botón de grabación de todo el año.";
+RECORDING_REQUIRED_BEFORE_QUEUED_ERROR= "Es necesario hacer una nueva grabación antes de que pueda poner en la cola. Pulse el botón de grabación y vuelta a empezar.";
+AUDIO_COULD_NOT_BE_CONVERTED_ERROR = "El audio no se pudo convertir. Por favor, inténtalo de nuevo.";
+NO_TAGS_ERROR = "No Tags";
+NO_TAGS_DETAILS_ERROR = "Debe haber un error, no se encontraron etiquetas para editar. Por favor, asegúrese de que está conectado a una red y relanzar la aplicación.";
+
+// Alerts
+ROUNDWARE_ALERT = "Roundware alerta";
+OK_BUTTON = "OK";

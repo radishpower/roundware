@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/roundware/!svn/ver/1092/android/branches/wifislam/RWFramework/src/com/halseyburgund/rwframework/core
+END
+RWDbAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/roundware/!svn/ver/1092/android/branches/wifislam/RWFramework/src/com/halseyburgund/rwframework/core/RWDbAdapter.java
+END
+RWConfiguration.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/roundware/!svn/ver/1092/android/branches/wifislam/RWFramework/src/com/halseyburgund/rwframework/core/RWConfiguration.java
+END
+RWHttpManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/roundware/!svn/ver/1092/android/branches/wifislam/RWFramework/src/com/halseyburgund/rwframework/core/RWHttpManager.java
+END
+RWAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/roundware/!svn/ver/1092/android/branches/wifislam/RWFramework/src/com/halseyburgund/rwframework/core/RWAction.java
+END
+RWTags.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/roundware/!svn/ver/1092/android/branches/wifislam/RWFramework/src/com/halseyburgund/rwframework/core/RWTags.java
+END
+RW.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/roundware/!svn/ver/1092/android/branches/wifislam/RWFramework/src/com/halseyburgund/rwframework/core/RW.java
+END
+RWRecordingTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/roundware/!svn/ver/1092/android/branches/wifislam/RWFramework/src/com/halseyburgund/rwframework/core/RWRecordingTask.java
+END
+RWService.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/roundware/!svn/ver/1092/android/branches/wifislam/RWFramework/src/com/halseyburgund/rwframework/core/RWService.java
+END
+RWActionQueue.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/roundware/!svn/ver/1092/android/branches/wifislam/RWFramework/src/com/halseyburgund/rwframework/core/RWActionQueue.java
+END
+RWLocationTracker.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/roundware/!svn/ver/1092/android/branches/wifislam/RWFramework/src/com/halseyburgund/rwframework/core/RWLocationTracker.java
+END
+RWActionFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/roundware/!svn/ver/1092/android/branches/wifislam/RWFramework/src/com/halseyburgund/rwframework/core/RWActionFactory.java
+END

@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/roundware/!svn/ver/781/ios/main_st/trunk/Other%20Sources/mogeneration-ShareKit-046/Classes/ShareKit/Core/Helpers/OAuth
+END
+OAServiceTicket.m
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/roundware/!svn/ver/781/ios/main_st/trunk/Other%20Sources/mogeneration-ShareKit-046/Classes/ShareKit/Core/Helpers/OAuth/OAServiceTicket.m
+END
+OAPlaintextSignatureProvider.m
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/roundware/!svn/ver/781/ios/main_st/trunk/Other%20Sources/mogeneration-ShareKit-046/Classes/ShareKit/Core/Helpers/OAuth/OAPlaintextSignatureProvider.m
+END
+OADataFetcher.h
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/roundware/!svn/ver/781/ios/main_st/trunk/Other%20Sources/mogeneration-ShareKit-046/Classes/ShareKit/Core/Helpers/OAuth/OADataFetcher.h
+END
+OAuthConsumer.h
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/roundware/!svn/ver/781/ios/main_st/trunk/Other%20Sources/mogeneration-ShareKit-046/Classes/ShareKit/Core/Helpers/OAuth/OAuthConsumer.h
+END
+OADataFetcher.m
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/roundware/!svn/ver/781/ios/main_st/trunk/Other%20Sources/mogeneration-ShareKit-046/Classes/ShareKit/Core/Helpers/OAuth/OADataFetcher.m
+END
+OAToken.h
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/roundware/!svn/ver/781/ios/main_st/trunk/Other%20Sources/mogeneration-ShareKit-046/Classes/ShareKit/Core/Helpers/OAuth/OAToken.h
+END
+OAHMAC_SHA1SignatureProvider.h
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/roundware/!svn/ver/781/ios/main_st/trunk/Other%20Sources/mogeneration-ShareKit-046/Classes/ShareKit/Core/Helpers/OAuth/OAHMAC_SHA1SignatureProvider.h
+END
+OASignatureProviding.h
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/roundware/!svn/ver/781/ios/main_st/trunk/Other%20Sources/mogeneration-ShareKit-046/Classes/ShareKit/Core/Helpers/OAuth/OASignatureProviding.h
+END
+OAMutableURLRequest.h
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/roundware/!svn/ver/781/ios/main_st/trunk/Other%20Sources/mogeneration-ShareKit-046/Classes/ShareKit/Core/Helpers/OAuth/OAMutableURLRequest.h
+END
+OAToken.m
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/roundware/!svn/ver/781/ios/main_st/trunk/Other%20Sources/mogeneration-ShareKit-046/Classes/ShareKit/Core/Helpers/OAuth/OAToken.m
+END
+OAHMAC_SHA1SignatureProvider.m
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/roundware/!svn/ver/781/ios/main_st/trunk/Other%20Sources/mogeneration-ShareKit-046/Classes/ShareKit/Core/Helpers/OAuth/OAHMAC_SHA1SignatureProvider.m
+END
+OAAsynchronousDataFetcher.h
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/roundware/!svn/ver/781/ios/main_st/trunk/Other%20Sources/mogeneration-ShareKit-046/Classes/ShareKit/Core/Helpers/OAuth/OAAsynchronousDataFetcher.h
+END
+OARequestParameter.h
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/roundware/!svn/ver/781/ios/main_st/trunk/Other%20Sources/mogeneration-ShareKit-046/Classes/ShareKit/Core/Helpers/OAuth/OARequestParameter.h
+END
+OAMutableURLRequest.m
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/roundware/!svn/ver/781/ios/main_st/trunk/Other%20Sources/mogeneration-ShareKit-046/Classes/ShareKit/Core/Helpers/OAuth/OAMutableURLRequest.m
+END
+OAAsynchronousDataFetcher.m
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/roundware/!svn/ver/781/ios/main_st/trunk/Other%20Sources/mogeneration-ShareKit-046/Classes/ShareKit/Core/Helpers/OAuth/OAAsynchronousDataFetcher.m
+END
+OAConsumer.h
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/roundware/!svn/ver/781/ios/main_st/trunk/Other%20Sources/mogeneration-ShareKit-046/Classes/ShareKit/Core/Helpers/OAuth/OAConsumer.h
+END
+OARequestParameter.m
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/roundware/!svn/ver/781/ios/main_st/trunk/Other%20Sources/mogeneration-ShareKit-046/Classes/ShareKit/Core/Helpers/OAuth/OARequestParameter.m
+END
+OAConsumer.m
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/roundware/!svn/ver/781/ios/main_st/trunk/Other%20Sources/mogeneration-ShareKit-046/Classes/ShareKit/Core/Helpers/OAuth/OAConsumer.m
+END
+OAServiceTicket.h
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/roundware/!svn/ver/781/ios/main_st/trunk/Other%20Sources/mogeneration-ShareKit-046/Classes/ShareKit/Core/Helpers/OAuth/OAServiceTicket.h
+END
+OAPlaintextSignatureProvider.h
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/roundware/!svn/ver/781/ios/main_st/trunk/Other%20Sources/mogeneration-ShareKit-046/Classes/ShareKit/Core/Helpers/OAuth/OAPlaintextSignatureProvider.h
+END

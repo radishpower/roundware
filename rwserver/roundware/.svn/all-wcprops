@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/roundware/!svn/ver/1076/rwserver/roundware
+END
+manage.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/roundware/!svn/ver/873/rwserver/roundware/manage.py
+END
+resetDb.sh
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/roundware/!svn/ver/914/rwserver/roundware/resetDb.sh
+END
+initdb.sh
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/roundware/!svn/ver/916/rwserver/roundware/initdb.sh
+END
+populateServerData.sh
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/roundware/!svn/ver/1008/rwserver/roundware/populateServerData.sh
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/roundware/!svn/ver/873/rwserver/roundware/__init__.py
+END
+populateLocalData.sh
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/roundware/!svn/ver/1008/rwserver/roundware/populateLocalData.sh
+END
+settings.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/roundware/!svn/ver/915/rwserver/roundware/settings.py
+END
+urls.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/roundware/!svn/ver/874/rwserver/roundware/urls.py
+END

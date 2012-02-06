@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="top_title">#FFFFFF</color>
+	<color name="subtitle">#FFFFFF</color>
+	<color name="scroll_hint">#99AAAAAA</color>
+	<color name="navbar_title_text">#FFFFFFFF</color>
+	<color name="navbar_title_shadow">#33000000</color>
+	<color name="home_button_text">#EEEEEE</color>
+	<color name="recordings_text">#AAFFFFFF</color>
+	<color name="recordings_shadow">#88000000</color>
+	<color name="record_time_text">#AAEEEEEE</color>
+	<color name="record_time_shadow">#AA000000</color>
+	<color name="map_background">#00FFFFFF</color>
+	<color name="list_text_selected">#FFFFFF</color>
+	<color name="list_text_unselected">#888888</color>
+	<color name="list_text_pressed">#AAAAAA</color>
+	<color name="level_meter_bg">#FFEEEEEE</color>
+	<color name="black">#000000</color>
+	<color name="red">#FF0000</color>
+	<color name="yellow">#FFFF00</color>
+	<color name="green">#00FF00</color>
+	<color name="blue">#0000FF</color>
+</resources>

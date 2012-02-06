@@ -1,0 +1,30 @@
+<!DOCTYPE busconfig PUBLIC
+ "-//freedesktop//DTD D-BUS Bus Configuration 1.0//EN"
+ "http://www.freedesktop.org/standards/dbus/1.0/busconfig.dtd">
+<busconfig>
+
+  <!-- Only root can own the service -->
+  <policy user="root">
+    <allow own="org.roundware.StreamScript"/>
+    <allow send_destination="org.roundware.StreamScript"/>
+  </policy>
+
+  <!-- Only www-data can own the service -->
+  <policy user="www-data">
+    <allow own="org.roundware.StreamScript"/>
+    <allow send_destination="org.roundware.StreamScript"/>
+  </policy>
+
+  <!-- Only dskippy can own the service -->
+  <policy user="dskippy">
+    <allow own="org.roundware.StreamScript"/>
+    <allow send_destination="org.roundware.StreamScript"/>
+  </policy>
+
+  <!-- Allow anyone to invoke methods on the interfaces -->
+  <policy context="default">
+    <allow send_destination="org.roundware.StreamScript"/>
+  </policy>
+
+</busconfig>
+

@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/roundware/!svn/ver/662/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes
+END
+ASIHTTPRequest.m
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/ASIHTTPRequest.m
+END
+ASICacheDelegate.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/ASICacheDelegate.h
+END
+ASINetworkQueue.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/ASINetworkQueue.h
+END
+ASIDataDecompressor.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/ASIDataDecompressor.h
+END
+ASIAuthenticationDialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/ASIAuthenticationDialog.h
+END
+ASIProgressDelegate.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/ASIProgressDelegate.h
+END
+ASIDownloadCache.m
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/ASIDownloadCache.m
+END
+ASINetworkQueue.m
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/ASINetworkQueue.m
+END
+ASIDataDecompressor.m
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/ASIDataDecompressor.m
+END
+ASIAuthenticationDialog.m
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/ASIAuthenticationDialog.m
+END
+ASIFormDataRequest.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/ASIFormDataRequest.h
+END
+ASIInputStream.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/ASIInputStream.h
+END
+ASIFormDataRequest.m
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/ASIFormDataRequest.m
+END
+ASIHTTPRequestConfig.h
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/roundware/!svn/ver/662/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/ASIHTTPRequestConfig.h
+END
+ASIInputStream.m
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/ASIInputStream.m
+END
+ASIHTTPRequestDelegate.h
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/ASIHTTPRequestDelegate.h
+END
+ASIWebPageRequest.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/ASIWebPageRequest.h
+END
+ASIDataCompressor.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/ASIDataCompressor.h
+END
+ASIHTTPRequest.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/ASIHTTPRequest.h
+END
+ASIWebPageRequest.m
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/ASIWebPageRequest.m
+END
+ASIDownloadCache.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/ASIDownloadCache.h
+END
+ASIDataCompressor.m
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/ASIDataCompressor.m
+END

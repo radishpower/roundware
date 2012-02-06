@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="rw_spec_server_url">http://174.129.242.219/roundware/</string>
+	<string name="rw_spec_project_id">1</string>
+
+	<string name="rw_spec_queue_check_interval_in_sec">10</string>
+    <string name="rw_spec_heartbeat_interval_in_sec">30</string>
+	<string name="rw_spec_min_location_update_time_msec">60000</string>
+	<string name="rw_spec_min_location_update_distance_meters">3</string>
+</resources>

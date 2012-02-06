@@ -1,0 +1,40 @@
+/* 
+  Localizable.strings
+  RWExample
+
+  Created by Joe Zobkiw on 1/20/12.
+  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+ 
+	http://www.raywenderlich.com/2876/how-to-localize-an-iphone-app-tutorial
+ 
+	http://translate.google.com/#en|es|
+ 
+*/
+
+// Reachability
+NETWORK_NOT_REACHABLE = "Network Not Reachable";
+NETWORK_REACHABLE_VIA_WIFI = "Network Reachable via WiFi";
+NETWORK_REACHABLE_VIA_WWAN = "Network Reachable via WWAN";
+
+// Audio
+PREPARING_AND_QUEUING = "Preparing and queuing...";
+SUBMITTING = "Submitting...";
+AUDIO_SUBMISSION_SUCCESSFUL = "Audio submission successful.";
+AUDIO_SUBMISSION_ERROR = "Audio submission error.";
+
+// Tags
+LISTEN_TAGS_TITLE = "Listen Tags";
+SPEAK_TAGS_TITLE = "Speak Tags";
+
+// Errors
+CONNECTIVITY_ERROR = "We're sorry, but there is a connectivity or resource issue. Please restart the app and try again.";
+MUST_RECORD_BEFORE_PLAYBACK_ERROR = "You must record something before you can play it back.";
+RECORDING_ALREADY_QUEUED_ERROR = "Your current recording has already been queued. To make another one press the round record button.";
+RECORDING_REQUIRED_BEFORE_QUEUED_ERROR= "You need to make a new recording before it can be queued. Press the round record button to begin.";
+AUDIO_COULD_NOT_BE_CONVERTED_ERROR = "The audio could not be converted. Please try again.";
+NO_TAGS_ERROR = "No Tags";
+NO_TAGS_DETAILS_ERROR = "There must be an error, no tags were found to edit. Please make sure you are connected to a network and relaunch the app.";
+
+// Alerts
+ROUNDWARE_ALERT = "Roundware Alert";
+OK_BUTTON = "OK";

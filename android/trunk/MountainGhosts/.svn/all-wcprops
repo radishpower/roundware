@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/roundware/!svn/ver/831/android/trunk/MountainGhosts
+END
+default.properties
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/default.properties
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/roundware/!svn/ver/796/android/trunk/MountainGhosts/.classpath
+END
+proguard.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/proguard.cfg
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/.project
+END
+AndroidManifest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/roundware/!svn/ver/831/android/trunk/MountainGhosts/AndroidManifest.xml
+END

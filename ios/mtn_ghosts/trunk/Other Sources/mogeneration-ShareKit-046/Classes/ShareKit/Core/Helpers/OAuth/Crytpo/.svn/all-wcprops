@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/roundware/!svn/ver/780/ios/mtn_ghosts/trunk/Other%20Sources/mogeneration-ShareKit-046/Classes/ShareKit/Core/Helpers/OAuth/Crytpo
+END
+Base64Transcoder.h
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/roundware/!svn/ver/780/ios/mtn_ghosts/trunk/Other%20Sources/mogeneration-ShareKit-046/Classes/ShareKit/Core/Helpers/OAuth/Crytpo/Base64Transcoder.h
+END
+sha1.h
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/roundware/!svn/ver/780/ios/mtn_ghosts/trunk/Other%20Sources/mogeneration-ShareKit-046/Classes/ShareKit/Core/Helpers/OAuth/Crytpo/sha1.h
+END
+hmac.c
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/roundware/!svn/ver/780/ios/mtn_ghosts/trunk/Other%20Sources/mogeneration-ShareKit-046/Classes/ShareKit/Core/Helpers/OAuth/Crytpo/hmac.c
+END
+Base64Transcoder.c
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/roundware/!svn/ver/780/ios/mtn_ghosts/trunk/Other%20Sources/mogeneration-ShareKit-046/Classes/ShareKit/Core/Helpers/OAuth/Crytpo/Base64Transcoder.c
+END
+sha1.c
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/roundware/!svn/ver/780/ios/mtn_ghosts/trunk/Other%20Sources/mogeneration-ShareKit-046/Classes/ShareKit/Core/Helpers/OAuth/Crytpo/sha1.c
+END
+hmac.h
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/roundware/!svn/ver/780/ios/mtn_ghosts/trunk/Other%20Sources/mogeneration-ShareKit-046/Classes/ShareKit/Core/Helpers/OAuth/Crytpo/hmac.h
+END

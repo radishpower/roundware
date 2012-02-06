@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/roundware/!svn/ver/610/client
+END
+roundclient.sh
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/roundware/!svn/ver/51/client/roundclient.sh
+END
+make_deb.sh
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/roundware/!svn/ver/2/client/make_deb.sh
+END
+mysqldump.sh
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/roundware/!svn/ver/71/client/mysqldump.sh
+END
+setup.py
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/roundware/!svn/ver/355/client/setup.py
+END
+update_round_client
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/roundware/!svn/ver/355/client/update_round_client
+END
+gtkrc
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/roundware/!svn/ver/2/client/gtkrc
+END
+roundclient.desktop
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/roundware/!svn/ver/69/client/roundclient.desktop
+END

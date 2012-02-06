@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RW Demo</string>
+    <string name="main_activity_label">Roundware Demo App</string>
+    <string name="listen_activity_label">Listen</string>
+    <string name="speak_activity_label">Speak</string>
+        
+    <string name="notification_title">RW</string>
+    <string name="notification_default_text">Press to return to RW Demo</string>
+
+    <string name="preferences">Settings</string>
+    <string name="exit">Exit</string>
+    <string name="save">Save</string>
+    <string name="erase">Erase</string>
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="close">Close</string>
+    <string name="listen">Listen</string>
+    <string name="speak">Speak</string>
+    <string name="quit">Quit</string>
+    <string name="record">Record</string>
+    <string name="stop">Stop</string>
+    <string name="submit">Submit</string>
+    <string name="off_line">Off Line</string>
+    <string name="on_line">On Line</string>
+    <string name="updating">Updating</string>
+    <string name="playing">Playing</string>
+    <string name="paused">Paused</string>
+    <string name="initializing">Initializing</string>
+    <string name="communicating">Communicating</string>
+    <string name="no_version_info">No version info</string>
+    <string name="no_project_info">No project info</string>
+    <string name="recording_started">On the air</string>
+    <string name="recording_stopped">Off the air</string>
+    
+    <string name="welcome_to_roundware">Welcome to Roundware</string>
+    <string name="press_play_to_start">Press play to start</string>
+    <string name="press_record_to_start">Press record to start</string>
+    <string name="roundware_logo">Roundware logo</string>
+    
+    <string name="record_counter_zero">0:00</string>
+    <string name="confirm_title">Confirm</string>
+    <string name="confirm_message">Do you want to submit your last recording?</string>
+    <string name="confirm_sharing_title">Tell a Friend</string>
+    <string name="confirm_exit">Pending Uploads</string>
+    <string name="error_title">Roundware Error</string>
+    <string name="message_title">Roundware Message</string>
+    <string name="starting_playback_title">Starting Playback</string>
+    <string name="sharing_subject">Roundware Sharing</string>
+    <string name="sharing_chooser_title">Share Recording</string>
+    <string name="thank_you_for_participating">Thank You for participating!</string>
+    <string name="cannot_delete_queue">Cannot delete queue at the moment!</string>
+    
+    <string name="current_version_STRING">Version: %s</string>
+    
+    <string name="unable_to_retrieve_configuration">
+        Unable to load project configuration from server or 
+        cache. Please exit the app, check connectivity and try again.
+    	</string>
+    <string name="starting_playback_message">
+        Waiting for audio from server, one moment please.
+        </string>
+    <string name="connecting_to_server_message">
+        Establishing connection to the server, one moment 
+        please.</string>
+    <string name="confirm_exit_message">There are still 
+        recordings waiting to be uploaded. Do you want to 
+        erase them or save them so uploading will automatically 
+        continue next time you run the app?
+        </string>
+    <string name="playing_static_soundtrack_msg">
+        You are listening to a sample audio stream. Please go to
+        the venue location to experience the real deal!
+    	</string>
+    <string name="connection_to_server_lost_play">
+        Connection to server lost. Please exit the app, check 
+        connectivity, and try again.
+    	</string>
+    <string name="connection_to_server_lost_record">
+        Connection to server lost. Making recordings is still 
+        possible but they will be queued and uploaded when the 
+        connection is restored.
+    </string>
+    <string name="connection_to_server_failed">
+        Connecting to Roundware service failed.
+    	</string>
+    <string name="enable_gps_message">
+        Please enable the GPS on your device for the best
+        experience with the Roundware app!
+    	</string>
+    <string name="enable_location_provider_message">
+        Please enable the GPS and/or the Wi-Fi or mobile network
+        location on your device for the best experience with the
+        Roundware app!
+    	</string>
+    <string name="recording_submit_problem">
+        Oh oh, there was a problem submitting your recording
+		probably due to technical issues. We do apologize and
+		would appreciate it if you try again later.
+    	</string>
+    <string name="modify_stream_problem">
+        Oh oh, there was a problem modifying the audio stream 
+		probably due to technical issues. The sound track you
+		hear might no longer match your selections. Please
+		try selecting again, or restart the app and try again.
+    	</string>
+        
+</resources>

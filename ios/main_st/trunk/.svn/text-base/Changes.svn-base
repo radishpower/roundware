@@ -1,0 +1,58 @@
+SCAPES CHANGES
+
+FALL 2010 - NEW PROTOCOL
+- Compiled for iOS 4.2
+- Integrated version 1.8 of ASIHTTPRequest
+- listenQuestions and speakQuestions are now loaded from new URL in new format
+- new event/operation URL in use
+- streamURL and sessionID are now begotten via new URL in requestFinished_startsession
+- most log_event messages converted except file upload ones
+- age/gender sending change to %09
+- converted file upload log_event messages
+- converted file upload to go to proper url (same as others)
+
+TODO
+
+√ it appears that questionid(s) is not being sent with log_event, oddly...I'm not sure if the logs are correct and cannot verify in the database since the event is not recorded due to missing eventtypeid (see next issue). questionid is being sent with upload_and_process_file though
+
+√ eventtypeid is not being sent with log_event (see above log), though for certain events, specifically start_upload, the db indicates that it was included
+
+√ seems that modify_stream events are not being sent
+    2011-04-18 17:30:42.089 Scapes[54919:207] skipped event: old_event_id:12
+
+√ are you sending heartbeat messages still?  operation=heartbeat
+
+√ get_questions is producing the right list of questions, but not in the correct order for some reason.  The questions are in the correct order when retrieved from the server with url: http://scapesaudio.dyndns.org/roundware/roundware.py?config=scapes&operation=get_questions&categoryid=8&subcategoryid=9 I don't see an operation=get_questions POST in the logs for some reason, so I don't know what's going on here...
+
+[ 
+{ "categoryid": 8, "id": 23, "listenyn": "Y", "ordering": 10.0, "speakyn": "Y", "subcategoryid": 9, "text": "Scapes is an excuse to talk to yourself about anything at all. Go for it." }, 
+{ "categoryid": 8, "id": 24, "listenyn": "Y", "ordering": 10.01484227275, "speakyn": "Y", "subcategoryid": 9, "text": "Ask a question of those who come after you." }, 
+{ "categoryid": 8, "id": 33, "listenyn": "Y", "ordering": 10.359752856529999, "speakyn": "Y", "subcategoryid": 9, "text": "Tell us about someone you wish was here with you right now. Talk to her/him." }, 
+{ "categoryid": 8, "id": 32, "listenyn": "Y", "ordering": 10.927974013544601, "speakyn": "Y", "subcategoryid": 9, "text": "Look straight up and describe what you see." }, 
+{ "categoryid": 8, "id": 29, "listenyn": "Y", "ordering": 10.994952824893399, "speakyn": "Y", "subcategoryid": 9, "text": "Tell a story inspired by something you see or feel here." } ]
+
+- (NSDictionary*)listenQuestions { // TOFIX
+if (listenQuestions == nil) {
+//	listenQuestions = [[NSDictionary dictionaryWithContentsOfURL:[NSURL URLWithString:kListenQuestionsURL]] retain];
+
+NSError* error;
+NSURL* url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@%@", kEventURL_, kScapesBaseParams, kGetQuestionsOperation]];
+NSString* s = [NSString stringWithContentsOfURL:url encoding:NSASCIIStringEncoding error:&error];
+NSDictionary *jsonDictionary = [s JSONValue];
+NSMutableDictionary *md = [[NSMutableDictionary dictionary] retain]; // create an empty dictionary
+NSDictionary *d;
+for (d in jsonDictionary) {
+if ([[d objectForKey:@"listenyn"] isEqualToString: @"Y"]) {
+/*
+[md setObject:[NSString stringWithFormat:@"%@ %@", [d objectForKey:@"ordering"], [d objectForKey:@"text"]]
+forKey:[d objectForKey:@"id"]];
+*/
+[md setObject:[NSString stringWithFormat:@"%@", [d objectForKey:@"text"]]
+forKey:[d objectForKey:@"id"]];
+}
+}
+listenQuestions = [[NSDictionary dictionaryWithDictionary:md] retain]; // copy to listen questions
+[md release];
+}
+return listenQuestions;
+}

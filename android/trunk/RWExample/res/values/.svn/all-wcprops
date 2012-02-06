@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/roundware/!svn/ver/1052/android/trunk/RWExample/res/values
+END
+colors.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/roundware/!svn/ver/1035/android/trunk/RWExample/res/values/colors.xml
+END
+strings.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/roundware/!svn/ver/1052/android/trunk/RWExample/res/values/strings.xml
+END
+rwconfig.xml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/roundware/!svn/ver/1017/android/trunk/RWExample/res/values/rwconfig.xml
+END

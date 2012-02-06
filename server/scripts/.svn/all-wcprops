@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/roundware/!svn/ver/853/server/scripts
+END
+restartApache.sh
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/roundware/!svn/ver/845/server/scripts/restartApache.sh
+END
+startStream.sh
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/roundware/!svn/ver/845/server/scripts/startStream.sh
+END
+sample-config
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/roundware/!svn/ver/853/server/scripts/sample-config
+END
+apacheConfSnippet.txt
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/roundware/!svn/ver/851/server/scripts/apacheConfSnippet.txt
+END
+rebuildAndrestartApache.sh
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/roundware/!svn/ver/845/server/scripts/rebuildAndrestartApache.sh
+END

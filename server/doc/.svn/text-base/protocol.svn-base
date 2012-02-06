@@ -1,0 +1,159 @@
+######################################################################
+# Overview
+######################################################################
+
+For all operations to be called from the server, you post operation=<String>
+along with your other post arguments to the web service. For example, to
+request a stream to be created, and get the URL back, this following would work:
+
+http://aevidence2.dyndns.org/roundware/roundware.py?operation=request_stream&categoryid=7
+
+All operations return JSON objects of different structures depending on
+what information is needed. The operations return values are given in detail
+in the Operations section.
+
+This is done using GET rather than POST since it's easier to write in a
+document. The Python scripts accept both POST and GET. Bellow are details of
+the valid operations, the arguments they take, and the JSON objects they return.
+
+All operations ca potentialy raise exceptions. If one is raised the return value
+of the web service is a JSON object representing an error (see Errors)
+
+######################################################################
+# Definitions
+######################################################################
+
+Many of the operations accept the same types of arguments. To make it easier
+write this document and keep it up-to-date later, we provide a few definitions
+to be referred to later in the document.
+
+GPSKeys are latitude, longitude, cource, haccuracy, speed, clienttime
+RequestKeys are catgegoryid, subcategoryid, questionid, GPSKeys
+DemographicsKeys are ageid, genderid, and usertypeid
+
+######################################################################
+# Operations:
+######################################################################
+
+Operation: request_stream
+Description:
+	Creates a stream based on the given request parameters and
+	returns the URL the audio is being streamed to.
+Parameters: RequestKeys
+Returns: <String>
+
+Operation: number_of_recordings
+Description:
+	Returns the number of recordings that match the given request
+	parameters.
+Parameters: RequestKeys
+Returns: <Integer>
+
+Operation: modify_stream
+Description:
+	Modifies the stream with the new request aguments.
+Parameters: sessionid, RequestKeys, DemographicsKeys
+Returns: <String>
+
+Operation: move_listener
+Description:
+	Updates the server with where the user is. Returns true if the user is
+	in of range of the project.
+Parameters: sessionid, GPSKeys
+Returns: <Boolean>
+
+Operation: heartbeat
+Description:
+	Tells the server the client is still listening. This is useful if the
+	phone GPS has not change, and does not needed to send move_listener, but
+	needs to send something so that the server does not clean up the stream.
+Parameters: sessionid
+Returns: true
+
+Operation: skip_ahead
+Descriptions:
+	Tells the stream to skip past the current recording playing and move on
+	to the next one.
+Parameters: sessionid
+Returns: true
+
+Operation: upload_and_process_file
+Description:
+	Uploads the given file to the system and stores a record for the file
+	using the given DemographicsKeys and RequestKeys to categorize it in the db.
+	Returns the recordingid used to store it in the db.
+Parameters: sessionid, DemographicsKeys, RequestKeys, file, submittedyn
+Returns: <Integer>
+	
+Operation: process_recorded_file
+Description:
+	Like upload_and_process_file, accept it accepts the filename of a file
+	already on the system, but not yet processed. Useful for clients that
+	don't use web upload, but something like Red5 and flash.
+Parameters: sessionid, DemographicsKeys, RequestKeys, filename, submittedyn
+Returns: <Integer>
+
+Operation: submit_recording
+Description:
+	Submits an already-uploaded recording. Not needed if the file was processed
+	with submittedyn = 'Y'. Useful if the file is processed by default with 'N'
+	and later allows the user to chose to submit.
+Parameters: IDKeys, recordingid
+Returns: true
+
+Operation: start_record
+Description: Used to indicate to the server when the user has begun recording.
+Parameters: IDKeys, GPSKeys
+Returns: true
+
+Operation: stop_record
+Description: Used to indicate to the server when the user done recording.
+Parameters: IDKeys, GPSKeys
+Returns: true
+
+Operation: start_stream
+Description: Used to indicate to the server when the user has started listening.
+Parameters: IDKeys, GPSKeys
+Returns: true
+
+Operation: stop_stream
+Description: Used to indicate to the server when the user has stopped listening.
+Parameters: IDKeys, GPSKeys
+Returns: true
+
+Operation: start_upload
+Description: Used to indicate to the server when the user has started upload.
+Parameters: IDKeys, GPSKeys
+Returns: true
+
+Operation: stop_upload
+Description: Tells server upload is done
+Parameters: IDKeys, GPSKeys, successyn
+Returns: true
+
+Operation: get_questions
+Description:
+	A list of questions that are part of the given category and optionally
+	subcategory. When activeyn is not 'Y' the questions can still be selected
+	to be listened to but they are not asked anymore on the speak side.
+Parameters: categoryid, subcategoryid
+Returns: A list of JSON objects with the following keys
+	(id, text, categoryid, subcategoryid, ordering, listenyn, speakyn)
+
+Operation: current_version
+Description: Returns the version of the server that is running.
+Parameters: None
+Returns: <float>
+
+######################################################################
+# Errors:
+######################################################################
+
+Any operation can return an error. Errors are objects with two members,
+ERROR_NUMBER, and ERROR_MESSAGE. They look like this:
+{ "ERROR_NUMBER" : <Integer>, "ERROR_MESSAGE" : <String> }
+For all operations this web service supports, it is valid to return the
+specified return value for the given operation, or an error. When using this
+web service, one should check to see if the returned value is an error before
+proceeding.
+

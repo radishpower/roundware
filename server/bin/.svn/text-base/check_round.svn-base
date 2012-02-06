@@ -1,0 +1,46 @@
+#!/usr/bin/python
+
+import gobject
+gobject.threads_init()
+import pygst
+pygst.require("0.10")
+import gst
+from roundwared import settings
+from roundwared import report_failure
+import sys
+
+print "WARNING: As a result of musicuri moving into the db this script is obselete"
+sys.exit(1)
+mainloop = gobject.MainLoop()
+pipeline = gst.Pipeline()
+gnomevfssrc = gst.element_factory_make("gnomevfssrc")
+gnomevfssrc.set_property("location", settings.MUSIC_URI)
+mad = gst.element_factory_make("mad")
+audioconvert = gst.element_factory_make("audioconvert")
+level = gst.element_factory_make("level")
+level.set_property("interval", 100)
+level.set_property("message", True)
+fakesink = gst.element_factory_make("fakesink")
+pipeline.add(gnomevfssrc, mad, audioconvert, level, fakesink)
+gst.element_link_many(gnomevfssrc, mad, audioconvert, level, fakesink)
+bus = pipeline.get_bus()
+bus.add_signal_watch()
+
+def get_message (bus, message):
+	if message.type == gst.MESSAGE_ERROR:
+		err, debug = message.parse_error()
+		#print err
+		report_failure.send_email()
+		pipeline.set_state(gst.STATE_NULL)
+		mainloop.quit()
+
+	elif message.type == gst.MESSAGE_ELEMENT \
+                        and message.src == level:
+		#print "Stream running. Doing nothing."
+		pipeline.set_state(gst.STATE_NULL)
+		mainloop.quit()
+
+watch_id = bus.connect("message", get_message)
+pipeline.set_state(gst.STATE_PLAYING)
+mainloop.run()
+

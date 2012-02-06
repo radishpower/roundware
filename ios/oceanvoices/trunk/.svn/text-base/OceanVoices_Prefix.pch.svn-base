@@ -1,0 +1,18 @@
+//
+// Prefix header for all source files of the 'Ocean Voices' target in the 'Ocean Voices' project
+//
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iPhone SDK 3.0 and later."
+#endif
+
+#import "Constants.h"
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+	#import <AVFoundation/AVFoundation.h>
+	#import <CoreLocation/CoreLocation.h>
+	#import <QuartzCore/CAAnimation.h>
+#endif

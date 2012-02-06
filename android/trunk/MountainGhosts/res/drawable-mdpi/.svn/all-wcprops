@@ -1,0 +1,473 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/roundware/!svn/ver/808/android/trunk/MountainGhosts/res/drawable-mdpi
+END
+navbar_play.png
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/navbar_play.png
+END
+navbar_close.png
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/roundware/!svn/ver/808/android/trunk/MountainGhosts/res/drawable-mdpi/navbar_close.png
+END
+standalone_button.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/standalone_button.xml
+END
+listen_who_pressed.png
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/listen_who_pressed.png
+END
+listen_volume_selector.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/listen_volume_selector.xml
+END
+speak_submit_selector.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/speak_submit_selector.xml
+END
+checkmark_unselected.png
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/checkmark_unselected.png
+END
+mg_listen_pressed.png
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/roundware/!svn/ver/796/android/trunk/MountainGhosts/res/drawable-mdpi/mg_listen_pressed.png
+END
+listen_play_pressed.png
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/listen_play_pressed.png
+END
+listen_record_selector.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/listen_record_selector.xml
+END
+speak_stop.png
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/speak_stop.png
+END
+record_progress_bg.png
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/record_progress_bg.png
+END
+navbar_button.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/navbar_button.xml
+END
+listen_pause_pressed.png
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/listen_pause_pressed.png
+END
+listen_record_pressed.png
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/listen_record_pressed.png
+END
+listen_who_selected.png
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/listen_who_selected.png
+END
+speak_record_pressed.png
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/speak_record_pressed.png
+END
+record_progress_bar.png
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/record_progress_bar.png
+END
+speak_submit.png
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/speak_submit.png
+END
+icon.png
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/icon.png
+END
+mg_listen_normal.png
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/roundware/!svn/ver/796/android/trunk/MountainGhosts/res/drawable-mdpi/mg_listen_normal.png
+END
+background_listen.png
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/background_listen.png
+END
+standalone_button_selector.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/standalone_button_selector.xml
+END
+navbar_ok.png
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/navbar_ok.png
+END
+speak_rerecord_selector.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/speak_rerecord_selector.xml
+END
+map_pin_speak.png
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/map_pin_speak.png
+END
+listen_what_pressed.png
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/listen_what_pressed.png
+END
+listitem_image_selector.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/listitem_image_selector.xml
+END
+filter_bar.png
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/filter_bar.png
+END
+list_cell.png
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/list_cell.png
+END
+listen_selector.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/roundware/!svn/ver/796/android/trunk/MountainGhosts/res/drawable-mdpi/listen_selector.xml
+END
+speak_record_selector.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/speak_record_selector.xml
+END
+speak_rerecord_pressed.png
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/speak_rerecord_pressed.png
+END
+mg_listen_deactivated.png
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/roundware/!svn/ver/796/android/trunk/MountainGhosts/res/drawable-mdpi/mg_listen_deactivated.png
+END
+background.png
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/background.png
+END
+listen_short_pane.png
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/listen_short_pane.png
+END
+navbar_home.png
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/navbar_home.png
+END
+speak_stop_selector.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/speak_stop_selector.xml
+END
+standalone_button_pressed.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/standalone_button_pressed.xml
+END
+level_meter_gray.png
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/level_meter_gray.png
+END
+listen_volume.png
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/listen_volume.png
+END
+speak_record_disabled.png
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/speak_record_disabled.png
+END
+map_pin_selected.png
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/map_pin_selected.png
+END
+listen_what_selector.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/listen_what_selector.xml
+END
+speak_stop_pressed.png
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/speak_stop_pressed.png
+END
+mg_speak_selected.png
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/roundware/!svn/ver/796/android/trunk/MountainGhosts/res/drawable-mdpi/mg_speak_selected.png
+END
+mg_speak_normal.png
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/roundware/!svn/ver/796/android/trunk/MountainGhosts/res/drawable-mdpi/mg_speak_normal.png
+END
+navbar_button_pressed.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/navbar_button_pressed.xml
+END
+mg_speak_pressed.png
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/roundware/!svn/ver/796/android/trunk/MountainGhosts/res/drawable-mdpi/mg_speak_pressed.png
+END
+listen_who.png
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/listen_who.png
+END
+speak_submit_pressed.png
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/speak_submit_pressed.png
+END
+navbar_button_selector.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/navbar_button_selector.xml
+END
+content_frame_meter.png
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/content_frame_meter.png
+END
+listen_full_pane.png
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/listen_full_pane.png
+END
+listen_play.png
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/listen_play.png
+END
+listen_who_selector.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/listen_who_selector.xml
+END
+help.png
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/help.png
+END
+mg_listen_selected.png
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/roundware/!svn/ver/796/android/trunk/MountainGhosts/res/drawable-mdpi/mg_listen_selected.png
+END
+listen_pause.png
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/listen_pause.png
+END
+listen_record.png
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/listen_record.png
+END
+listen_play_selector.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/listen_play_selector.xml
+END
+speak_record.png
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/speak_record.png
+END
+map_pin_listen.png
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/map_pin_listen.png
+END
+background_speak.png
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/background_speak.png
+END
+level_meter.png
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/level_meter.png
+END
+checkmark_brown_selected.png
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/checkmark_brown_selected.png
+END
+checkmark_blue_selected.png
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/checkmark_blue_selected.png
+END
+listen_pause_selector.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/listen_pause_selector.xml
+END
+listen_volume_pressed.png
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/listen_volume_pressed.png
+END
+content_frame_no_meter.png
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/content_frame_no_meter.png
+END
+thankyou_frame.png
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/thankyou_frame.png
+END
+speak_selector.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/roundware/!svn/ver/796/android/trunk/MountainGhosts/res/drawable-mdpi/speak_selector.xml
+END
+listen_what.png
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/listen_what.png
+END
+navbar_border.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/navbar_border.xml
+END
+mg_speak_deactivated.png
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/roundware/!svn/ver/796/android/trunk/MountainGhosts/res/drawable-mdpi/mg_speak_deactivated.png
+END
+speak_rerecord.png
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/speak_rerecord.png
+END
+listen_what_selected.png
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/listen_what_selected.png
+END
+status_icon.png
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/roundware/!svn/ver/786/android/trunk/MountainGhosts/res/drawable-mdpi/status_icon.png
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/roundware/!svn/ver/600/server/www
+END
+fcgi.py
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/roundware/!svn/ver/528/server/www/fcgi.py
+END
+scapes.py
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/roundware/!svn/ver/600/server/www/scapes.py
+END
+roundware.py
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/roundware/!svn/ver/528/server/www/roundware.py
+END

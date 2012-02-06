@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- ===================================================================== -->
+	<!-- App overwritable Roundware Specifications                             -->
+	<!-- ===================================================================== -->
+
+	<string name="rw_spec_server_url">http://roundware.dyndns.org:80/roundware/roundware.py</string>
+	<string name="rw_spec_config">r2c</string>
+	<string name="rw_spec_category_id">10</string>
+	<string name="rw_spec_sub_category_id">10</string>
+	<string name="rw_spec_heartbeat_interval_in_sec">30</string>
+
+	<string name="rw_spec_queue_check_interval_in_sec">10</string>
+	<string name="rw_spec_queued_file_basename">note</string>
+	<string name="rw_spec_queued_file_extension">.wav</string>
+	
+	<string name="rw_spec_max_recording_time_in_sec">45</string>
+	
+	<string name="rw_spec_include_location_in_requests_yn">Y</string>
+	<string name="rw_spec_min_location_update_time_msec">60000</string>
+	<string name="rw_spec_min_location_update_distance_meters">5</string>
+	<string name="rw_spec_location_based_questions_yn">Y</string>
+
+	<string name="rw_spec_static_soundtrack_session_id">-1</string>
+	<string name="rw_spec_static_soundtrack_name">outofrange.mp3</string>
+
+	<!-- future:
+	<string name="rw_spec_audio_recording_format">wav</string>
+	-->
+
+	<!-- ===================================================================== -->
+	<!-- Definitions for debugging purposes only (!)                           -->
+	<!-- ===================================================================== -->
+
+	<!-- 
+		Set to 'N' for normal operation, use 'Y' to skip adding a location to 
+		the request stream server call.
+	-->
+	<string name="rw_debug_open_audio_stream_without_location_yn">N</string>
+	
+	<!-- ===================================================================== -->
+	<!-- Roundware client and server KV key definitions                        -->
+	<!-- ===================================================================== -->
+
+	<!-- client only (must start with '_')-->	
+	<string name="rw_key_server_url">_server_url</string>
+	<string name="rw_key_label">_label</string>
+	<string name="rw_key_location_provider_name">_location_provider</string>
+	
+	<!-- send to server -->
+	<string name="rw_key_file">file</string>
+	<string name="rw_key_filename">filename</string>
+	<string name="rw_key_stream_url">stream_url</string>    
+	<string name="rw_key_latitude">latitude</string>    
+	<string name="rw_key_longitude">longitude</string>  
+	<string name="rw_key_accuracy">haccuracy</string>  
+	<string name="rw_key_create_time">createtime</string>    
+	<string name="rw_key_config">config</string>    
+	<string name="rw_key_operation">operation</string>    
+	<string name="rw_key_submitted">submittedyn</string>    
+	<string name="rw_key_ud_id">udid</string>    
+	<string name="rw_key_session_id">sessionid</string>
+	<string name="rw_key_recording_id">recordingid</string>    
+	<string name="rw_key_demographic_id">demographicid</string>    
+	<string name="rw_key_user_type_id">usertypeid</string>    
+	<string name="rw_key_question_id">questionid</string>    
+	<string name="rw_key_category_id">categoryid</string>    
+	<string name="rw_key_sub_category_id">subcategoryid</string>    
+	<string name="rw_key_event_type">eventtypeid</string>    
+	<string name="rw_key_message">message</string>
+	
+	<!-- received from server -->
+	<string name="rw_key_server_result">result</string>
+	<string name="rw_key_server_error_number">error_number</string>
+	<string name="rw_key_server_error_message">error_message</string>
+	<string name="rw_key_server_error_traceback">traceback</string>
+	<string name="rw_key_server_user_message">user_error_message</string>
+	<string name="rw_key_server_sharing_message">sharing_message</string>
+	
+	<!-- ===================================================================== -->
+	<!-- Definition of names of supported Roundware operations                 -->
+	<!-- ===================================================================== -->
+	
+	<string name="rw_op_number_of_recordings">number_of_recordings</string>    
+	<string name="rw_op_get_questions">get_questions</string>    
+	<string name="rw_op_modify_stream">modify_stream</string>    
+	<string name="rw_op_get_stream">request_stream</string>    
+	<string name="rw_op_heartbeat">heartbeat</string>    
+	<string name="rw_op_move_listener">move_listener</string>    
+	<string name="rw_op_log_event">log_event</string>    
+	<string name="rw_op_upload_and_process">upload_and_process_file</string>
+	<string name="rw_op_enter_recording">enter_recording</string>
+	<string name="rw_op_upload_recording">upload_recording</string>
+	
+	<!-- ===================================================================== -->
+	<!-- Definition of Roundware log event types                               -->
+	<!-- ===================================================================== -->
+	
+	<string name="rw_event_type_start_listen">3</string>
+	<string name="rw_event_type_stop_listen">4</string>    
+	<string name="rw_event_type_start_record">5</string>    
+	<string name="rw_event_type_stop_record">6</string>    
+	<string name="rw_event_type_start_upload">7</string>    
+	<string name="rw_event_type_stop_upload">14</string>
+	
+	<!-- ===================================================================== -->
+	<!-- Definition of valid speaker types and categories                      -->
+	<!-- ===================================================================== -->
+	
+	<!-- Speaker Kinds (in display sequence, with demographicid before semicolumn)-->
+    <string-array name="rw_speaker_kind_listen">
+        <item>1:Women</item>
+        <item>2:Men</item>
+        <item>3:Girls</item>
+        <item>4:Boys</item>
+    </string-array>
+
+    <string-array name="rw_speaker_kind_record">
+        <item>1:Woman</item>
+        <item>2:Man</item>
+        <item>3:Girl</item>
+        <item>4:Boy</item>
+    </string-array>
+    
+	<!-- User Types, characters before the semicolumn are to be sent to the server as usertypeid -->
+	<!-- Note: if there is only one item in the list, it should not be displayed for user selection -->
+    <string-array name="rw_user_type">
+    	<item>18:Participant</item>
+    </string-array>
+
+	<!-- Example of a full list: 
+    <string-array name="rw_user_type">
+    	<item>1:I don\'t like categories</item>
+    	<item>15:Advocate</item>
+    	<item>2:Artist/Musician</item>
+    	<item>5:Business Person</item>
+    	<item>13:Conservationist</item>
+    	<item>14:Fisherman</item>
+    	<item>16:Politician</item>
+    	<item>4:Scientist</item>
+    	<item>3:Student</item>
+    	<item>6:Teacher</item>
+    </string-array>
+	 -->
+
+</resources>

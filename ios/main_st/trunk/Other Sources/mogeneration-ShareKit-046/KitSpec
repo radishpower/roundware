@@ -1,0 +1,6 @@
+--- 
+dependencies: 
+- reachability: 2.2
+name: sharekit
+version: 0.4.6
+resources-directory: src/resources

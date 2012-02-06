@@ -1,0 +1,89 @@
+#!/usr/bin/env python
+
+# This program simulates a user walking around DeCordova.
+# It will be used to control the stream being played in the
+# lobby of the musueum.
+
+import gobject
+import random
+import json
+import sys
+from roundwared import gpsposn
+from roundwared import rounddbus
+
+STEP_SIZE = 5/1000.0 # in kilometers
+STEP_INTERVAL = 5000 #in milliseconds
+CENTER_OF_DECORDOVA = gpsposn.GPSPosn(42.43029785, -71.3114624)
+RADIUS_OF_DECORDOVA = 160/1000.0 # in kilometers
+INNER_RADIUS_OF_DECORDOVA = 40/1000.0
+if len(sys.argv) > 1:
+	STREAM_NAME = sys.argv[1]
+else:
+	STREAM_NAME = "stream0"
+print STREAM_NAME
+
+
+def move_listener (stream_name, posn):
+	request = {
+		'latitude' : posn.latitude,
+		'longitude' : posn.longitude,
+	}
+	arg_hack = json.dumps(request)
+	print arg_hack
+	rounddbus.emit_stream_signal(stream_name, "move_listener", arg_hack)
+
+class LobbyListener:
+	def __init__ (self, posn, outer_radius, inner_radius):
+		self.center_posn = posn
+		self.current_posn = self.center_posn
+		self.outer_radius = outer_radius
+		self.inner_radius = inner_radius
+		self.goto_outer_circle = True
+		self.choose_new_destination()
+
+	def choose_new_destination (self):
+		bearing = random.randint(0, 359)
+		print "Choosing a new destination: "+str(bearing)+" "+str(self.goto_outer_circle)
+		if self.goto_outer_circle:
+			radius = self.outer_radius
+		else:
+			radius = self.inner_radius
+		self.target_posn = \
+			self.center_posn.destination_point(bearing, radius)
+
+	def take_step (self):
+		bearing = self.current_posn.bearing_to(self.target_posn)
+		self.current_posn = \
+			self.current_posn.destination_point(bearing, STEP_SIZE)
+		move_listener(STREAM_NAME, self.current_posn)
+		if self.is_near_target_circle():
+			self.goto_outer_circle = not self.goto_outer_circle
+			self.choose_new_destination()
+		return True
+
+	def is_near_target_circle (self):
+		if self.goto_outer_circle:
+			radius = self.outer_radius
+		else:
+			radius = self.inner_radius
+		distance = self.current_posn.distance_to(self.target_posn)
+		return distance <= STEP_SIZE
+
+ll = LobbyListener(
+	CENTER_OF_DECORDOVA,
+	RADIUS_OF_DECORDOVA,
+	INNER_RADIUS_OF_DECORDOVA)
+
+gobject.timeout_add(STEP_INTERVAL, ll.take_step)
+gobject.MainLoop().run()
+
+#def create_kml_file ():
+#	data = []
+#	for i in range(0, 10000):
+#		lat = ll.current_posn.latitude
+#		lon = ll.current_posn.longitude
+#		data.append(str(lon)+","+str(lat)+",0")
+#		ll.take_step()
+#
+#	print " ".join(data)
+

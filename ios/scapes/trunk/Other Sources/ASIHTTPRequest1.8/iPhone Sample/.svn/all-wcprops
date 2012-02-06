@@ -1,0 +1,203 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/iPhone%20Sample
+END
+SynchronousViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/iPhone%20Sample/SynchronousViewController.h
+END
+main.m
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/iPhone%20Sample/main.m
+END
+SynchronousViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/iPhone%20Sample/SynchronousViewController.m
+END
+iphone-icon.png
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/iPhone%20Sample/iphone-icon.png
+END
+WebPageViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/iPhone%20Sample/WebPageViewController.h
+END
+iPadSampleAppDelegate.h
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/iPhone%20Sample/iPadSampleAppDelegate.h
+END
+RequestProgressCell.h
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/iPhone%20Sample/RequestProgressCell.h
+END
+WebPageViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/iPhone%20Sample/WebPageViewController.m
+END
+iPadSampleAppDelegate.m
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/iPhone%20Sample/iPadSampleAppDelegate.m
+END
+SampleViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/iPhone%20Sample/SampleViewController.h
+END
+RequestProgressCell.m
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/iPhone%20Sample/RequestProgressCell.m
+END
+UploadViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/iPhone%20Sample/UploadViewController.h
+END
+SampleViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/iPhone%20Sample/SampleViewController.m
+END
+UploadViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/iPhone%20Sample/UploadViewController.m
+END
+InfoCell.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/iPhone%20Sample/InfoCell.h
+END
+iPadInfo.plist
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/iPhone%20Sample/iPadInfo.plist
+END
+Tests-Info.plist
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/iPhone%20Sample/Tests-Info.plist
+END
+InfoCell.m
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/iPhone%20Sample/InfoCell.m
+END
+iPhoneInfo.plist
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/iPhone%20Sample/iPhoneInfo.plist
+END
+DetailCell.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/iPhone%20Sample/DetailCell.h
+END
+iphone-tests-icon.png
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/iPhone%20Sample/iphone-tests-icon.png
+END
+DetailCell.m
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/iPhone%20Sample/DetailCell.m
+END
+AuthenticationViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/iPhone%20Sample/AuthenticationViewController.h
+END
+iPhoneSampleAppDelegate.h
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/iPhone%20Sample/iPhoneSampleAppDelegate.h
+END
+ToggleCell.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/iPhone%20Sample/ToggleCell.h
+END
+iPhone_Prefix.pch
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/iPhone%20Sample/iPhone_Prefix.pch
+END
+RootViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/iPhone%20Sample/RootViewController.h
+END
+AuthenticationViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/iPhone%20Sample/AuthenticationViewController.m
+END
+QueueViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/iPhone%20Sample/QueueViewController.h
+END
+iPhoneSampleAppDelegate.m
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/iPhone%20Sample/iPhoneSampleAppDelegate.m
+END
+ToggleCell.m
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/iPhone%20Sample/ToggleCell.m
+END
+RootViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/iPhone%20Sample/RootViewController.m
+END
+QueueViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/iPhone%20Sample/QueueViewController.m
+END

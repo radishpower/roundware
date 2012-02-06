@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_listen"
+    android:orientation="vertical">
+    
+    <!-- Toolbar -->
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="39dp"
+		android:background="@drawable/navbar_border"
+		>
+		
+		<TextView
+        	android:layout_width="wrap_content"
+        	android:layout_height="fill_parent"
+        	android:textColor="@color/navbar_title_text"
+        	android:gravity="center_vertical"
+        	android:textSize="18dp"
+        	android:textStyle="bold"
+        	android:text="@string/nav_title_listen"
+        	android:shadowColor="@color/navbar_title_shadow"
+        	android:shadowDx="1"
+        	android:shadowDy="1"
+        	android:shadowRadius="1.2"
+        	android:layout_marginLeft="10dp"
+        	/>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="0.5"
+			/>
+
+		<ImageButton android:id="@+id/button_home"
+			android:layout_width="40dp"
+			android:layout_height="fill_parent"
+			android:layout_marginRight="1dp"
+			android:layout_centerInParent="true"
+			android:layout_gravity="right"
+			android:src="@drawable/navbar_home"
+			android:textColor="#FFFFFF"
+			android:textSize="12sp"
+			android:background="@drawable/navbar_button_selector"
+			android:visibility="visible"
+			/>
+
+		<ImageButton android:id="@+id/button_exit"
+			android:layout_width="40dp"
+			android:layout_height="fill_parent"
+			android:layout_marginRight="1dp"
+			android:layout_centerInParent="true"
+			android:layout_gravity="right"
+			android:src="@drawable/navbar_close"
+			android:textColor="#FFFFFF"
+			android:textSize="12sp"
+			android:background="@drawable/navbar_button_selector"
+			android:visibility="gone"
+			/>
+		
+	</LinearLayout>
+
+	<RelativeLayout
+			xmlns:app="http://schemas.android.com/apk/res/com.halseyburgund.roundcambridge"
+  			android:layout_width="fill_parent"
+			android:layout_height="355dp">
+
+		<TextView
+			android:id="@+id/number_of_recordings"
+	       	android:layout_width="fill_parent"
+	       	android:layout_marginTop="80dp"
+			android:layout_height="275dp"
+	       	android:gravity="center_horizontal"
+	       	android:textStyle="bold"
+	       	android:textSize="18sp"
+	       	android:text=""
+	       	android:textColor="@color/recordings_text"
+			android:visibility="gone"
+			android:shadowColor="@color/recordings_shadow"
+			android:shadowDx="1"
+			android:shadowDy="1"
+			android:shadowRadius="1.2"
+	       	/>
+
+		<com.halseyburgund.roundcambridge.view.SlidingPanel
+			android:id="@+id/question_panel"
+			android:layout_width="fill_parent"
+			android:layout_height="355dp"
+			android:orientation="vertical"
+			app:speed="500"
+			app:targetHeight="355dp"
+			android:visibility="gone"
+			android:background="@drawable/listen_full_pane"
+			android:layout_alignParentBottom="true">
+
+			<!-- Top message area in sliding panel -->
+			<LinearLayout
+		        	android:layout_width="fill_parent"
+		        	android:layout_height="115dp"
+		        	android:orientation="vertical"
+		        	android:gravity="center"
+		        	android:paddingLeft="10dp"
+		        	android:paddingRight="10dp"
+				>
+				<TextView
+		        	android:layout_width="fill_parent"
+		        	android:layout_height="wrap_content"
+		        	android:textColor="@color/subtitle"
+		        	android:gravity="center"
+		        	android:textStyle="normal"
+			        android:textSize="14sp"
+		        	android:text="@string/listen_what_question_header"
+		        	android:paddingBottom="10dp"
+		        	/>
+				<TextView
+		        	android:layout_width="fill_parent"
+		        	android:layout_height="wrap_content"
+		        	android:textColor="@color/scroll_hint"
+		        	android:gravity="center"
+		        	android:textStyle="normal"
+			        android:textSize="11sp"
+		        	android:text="@string/listen_question_scroll_message"/>
+			</LinearLayout>
+	
+   			<ListView android:id="@+id/question_list"
+	            android:layout_width="300dp"
+	            android:layout_height="225dp"
+				android:layout_margin="10dp"
+			    android:drawSelectorOnTop="false"
+			    android:cacheColorHint="#00000000"
+				android:scrollbars="none"
+			    />
+		</com.halseyburgund.roundcambridge.view.SlidingPanel>
+		
+		<com.halseyburgund.roundcambridge.view.SlidingPanel
+			android:id="@+id/speaker_panel"
+			android:layout_width="fill_parent"
+			android:layout_height="355dp"
+			android:orientation="vertical"
+			app:speed="500"
+			app:targetHeight="355dp"
+			android:visibility="gone"
+			android:background="@drawable/listen_full_pane"
+			android:layout_alignParentBottom="true">
+	
+			<!-- Top message area in sliding panel -->
+			<LinearLayout
+		        	android:layout_width="fill_parent"
+		        	android:layout_height="115dp"
+		        	android:orientation="vertical"
+		        	android:gravity="center"
+		        	android:paddingLeft="10dp"
+		        	android:paddingRight="10dp"
+				>
+				<TextView
+		        	android:layout_width="fill_parent"
+		        	android:layout_height="wrap_content"
+		        	android:textColor="@color/subtitle"
+		        	android:gravity="center"
+		        	android:textStyle="normal"
+			        android:textSize="14sp"
+		        	android:text="@string/listen_who_question_header"
+		        	android:paddingBottom="10dp"
+		        	/>
+	        	<!-- scroll message empty for this screen resolution -->
+				<TextView
+		        	android:layout_width="fill_parent"
+		        	android:layout_height="wrap_content"
+		        	android:textColor="@color/scroll_hint"
+		        	android:gravity="center"
+		        	android:textStyle="normal"
+			        android:textSize="11sp"
+		        	android:text=""/>
+			</LinearLayout>
+	
+   			<ListView android:id="@+id/speaker_list"
+	            android:layout_width="300dp"
+	            android:layout_height="225dp"
+				android:layout_margin="10dp"
+			    android:drawSelectorOnTop="false"
+			    android:cacheColorHint="#00000000"
+				android:scrollbars="none"
+			    />
+		</com.halseyburgund.roundcambridge.view.SlidingPanel>
+
+		<com.halseyburgund.roundcambridge.view.SlidingPanel
+			android:id="@+id/occupation_panel"
+			android:layout_width="fill_parent"
+			android:layout_height="355dp"
+			android:orientation="vertical"
+			app:speed="500"
+			app:targetHeight="355dp"
+			android:visibility="gone"
+			android:background="@drawable/listen_full_pane"
+			android:layout_alignParentBottom="true">
+
+			<!-- Top message area in sliding panel -->
+			<LinearLayout
+		        	android:layout_width="fill_parent"
+		        	android:layout_height="115dp"
+		        	android:orientation="vertical"
+		        	android:gravity="center"
+		        	android:paddingLeft="10dp"
+		        	android:paddingRight="10dp"
+				>
+				<TextView
+		        	android:layout_width="fill_parent"
+		        	android:layout_height="wrap_content"
+		        	android:textColor="@color/subtitle"
+		        	android:gravity="center"
+		        	android:textStyle="normal"
+			        android:textSize="14sp"
+		        	android:text="@string/listen_what_types_question_header"
+		        	android:paddingBottom="10dp"
+		        	/>
+				<TextView
+		        	android:layout_width="fill_parent"
+		        	android:layout_height="wrap_content"
+		        	android:textColor="@color/scroll_hint"
+		        	android:gravity="center"
+		        	android:textStyle="normal"
+			        android:textSize="11sp"
+		        	android:text="@string/listen_question_scroll_message"/>
+			</LinearLayout>
+	
+   			<ListView android:id="@+id/occupation_list"
+	            android:layout_width="300dp"
+	            android:layout_height="225dp"
+				android:layout_margin="10dp"
+			    android:drawSelectorOnTop="false"
+			    android:cacheColorHint="#00000000"
+				android:scrollbars="none"
+			    />
+		</com.halseyburgund.roundcambridge.view.SlidingPanel>
+		
+		<!-- Volume Control Panel -->
+		<com.halseyburgund.roundcambridge.view.SlidingPanel
+			android:id="@+id/volume_panel"
+			android:layout_width="fill_parent"
+			android:layout_height="100dp"
+			android:orientation="vertical"
+			app:speed="500"
+			app:targetHeight="100dp"
+			android:visibility="gone"
+			android:background="@drawable/listen_short_pane"
+			android:gravity="center"
+			android:layout_alignParentBottom="true">
+	
+			<SeekBar
+		    	android:id="@+id/volume"
+	 	  	  	android:layout_width="250dp"
+	 	  	  	android:layout_height="wrap_content"
+	 	 		android:progress="40"
+	 	 		android:max="50"
+	  			style="?android:attr/progressBarStyleHorizontal"/>
+				    
+		</com.halseyburgund.roundcambridge.view.SlidingPanel>  
+		
+		<com.halseyburgund.roundcambridge.view.SlidingPanel
+			android:id="@+id/status_panel"
+			android:layout_width="fill_parent"
+			android:layout_height="100dp"
+			android:orientation="vertical"
+			app:speed="500"
+			app:targetHeight="100dp"
+			android:visibility="visible"
+			android:background="@drawable/listen_short_pane"
+			android:layout_alignParentBottom="true">
+	
+		    <TextView
+		        android:id="@+id/status_msg"
+		        android:layout_width="fill_parent"
+		        android:layout_height="100dp"
+		        android:paddingLeft="20dp"
+		        android:paddingRight="20dp"
+		        android:textColor="@color/subtitle"
+		        android:gravity="center"
+		        android:textSize="14sp"
+		        android:text="@string/listening_to_sounds"
+		        />
+		</com.halseyburgund.roundcambridge.view.SlidingPanel>    
+		    
+     </RelativeLayout>
+	
+	  <LinearLayout
+	  android:layout_width="wrap_content"
+	  android:layout_height="wrap_content"
+	  android:id="@+id/menu"
+	  android:orientation="horizontal">
+	  
+		<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="113dp"
+		android:id="@+id/menu"
+		android:orientation="vertical">
+		
+			<ImageButton android:id="@+id/button_who"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@android:color/transparent"
+			android:src="@drawable/listen_who_selector"/>
+			
+			<ImageButton android:id="@+id/button_record"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@android:color/transparent"
+			android:src="@drawable/listen_record_selector"/>			
+	  
+	  	</LinearLayout>	
+	  	
+	  	<ImageButton android:id="@+id/button_play"
+		android:layout_width="wrap_content"
+		android:layout_height="113dp"
+		android:background="@android:color/transparent"
+		android:src="@drawable/listen_pause_selector"/>
+		
+		<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="113dp"
+		android:id="@+id/menu"
+		android:orientation="vertical">
+		
+			<ImageButton android:id="@+id/button_what"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@android:color/transparent"
+			android:src="@drawable/listen_what_selector"/>
+			
+			<ImageButton android:id="@+id/button_volume"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@android:color/transparent"
+			android:src="@drawable/listen_volume_selector"/>			
+	  
+	  	</LinearLayout>	
+	  
+	  </LinearLayout>
+
+</LinearLayout>

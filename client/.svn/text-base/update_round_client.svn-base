@@ -1,0 +1,9 @@
+#!/bin/sh
+
+DEBFILE=dist/RoundClient-1.0.linux-armv5tel.deb
+IP=$1
+
+scp $DEBFILE root@$IP:/media/mmc2
+#scp $DEBFILE share/*mp3 root@$IP:/media/mmc2
+ssh root@$IP "apt-get install python2.5-hildon gstreamer0.10-plugins-extra python-simplejson && chmod 777 /media/mmc2 && dpkg -i /media/mmc2/*deb && update-sudoers"
+

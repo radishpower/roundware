@@ -1,0 +1,68 @@
+echo "Roundware installation script."
+echo "IMPORTANT: this script assumes you are running Ubuntu 11.10 (Oneiric Ocelot), and that $EDITOR points to your favorite editor.  Please cancel (ctrl-c) if this is not the case."
+read -p "<enter> to confirm" yn
+echo ""
+sudo apt-get install subversion python-mysqldb python-configobj mysql-server icecast2 ffmpeg apache2 pacpl gstreamer0.10-gnomevfs python-dbus libapache2-mod-fastcgi
+
+#todo - we don't need ALL of this for Ocelot, but will chase that down later..
+sudo apt-get install ubuntu-restricted-extras
+
+echo ""
+read -p "for the next four (4) commands, use the password for your mysql root user, which you may have just configured.  <enter> to confirm" yn
+echo ""
+
+echo "create database roundware" | mysql -uroot -p
+echo "create user 'round'@'localhost' identified by 'round'" | mysql -uroot -p
+echo "grant all privileges on roundware.* to 'round'@'localhost' with grant option" | mysql -uroot -p
+cat data_files/roundware_base.sql | mysql -uroot -p roundware
+
+sudo mkdir /var/www/rwaudio
+sudo chmod a+wrx /var/www/rwaudio #maybe not a great idea. but www-data user needs to create files here somehow.
+sudo cp data_files/rw_test_audio1.wav /var/www/rwaudio #copy sample rw audio file into proper location
+sudo mkdir /var/www/.gnome2
+sudo chown www-data:www-data /var/www/.gnome2
+
+echo ""
+read -p "you'll be prompted to edit a new roundware log file.  enter some whitespace and save it (':wq' in vim).  <enter> to confirm" yn
+echo ""
+sudo $EDITOR /var/log/roundware
+sudo chown www-data /var/log/roundware
+
+echo ""
+read -p "Now we copy the sample roundware config to /etc/roundware/rw.  <enter> to confirm" yn
+echo ""
+sudo mkdir /etc/roundware
+sudo cp ./scripts/sample-config /etc/roundware/rw
+
+echo ""
+read -p "Next, you'll edit the base icecast config. Set the enable value to true.  <enter> to confirm" yn
+echo ""
+sudo $EDITOR /etc/default/icecast2 #to set enable=true
+
+echo ""
+read -p "Next, you'll edit the base secondary icecast config. set passwords (in 3 places) to what's in /etc/roundwared (likely 'round').  Also, set the max number of sources to 100.  <enter> to confirm" yn
+echo ""
+sudo $EDITOR /etc/icecast2/icecast.xml #set passwords to what's in /etc/roundwared (or stream.py, they should be in /etc/roundwared)
+sudo /etc/init.d/icecast2 restart
+
+echo ""
+read -p "Next, we'll install roundware, and restart dbus.  <enter> to confirm" yn
+echo ""
+sudo python setup.py install
+sudo /etc/init.d/dbus restart # This will possible cause issues and require system reboot.
+
+echo ""
+read -p "Next, we'll need to modify our apache config. Copy and paste the snippet below into the config.  Make sure there are no terminal-induced line breaks when you copy!  First, let's look at the snippet:  <enter> to confirm" yn
+echo ""
+more ./scripts/apacheConfSnippet.txt
+
+echo ""
+read -p "Copied?  Good.  Now, lets paste it into the apache config, before the closing tag.  <enter> to confirm" yn
+echo ""
+sudo $EDITOR /etc/apache2/sites-enabled/000-default
+
+
+echo ""
+read -p "Finally, let's restart apache.  <enter> to confirm" yn
+echo ""
+sh ./scripts/restartApache.sh

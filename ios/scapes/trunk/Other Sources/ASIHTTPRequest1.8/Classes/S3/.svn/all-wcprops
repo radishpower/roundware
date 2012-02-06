@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/S3
+END
+ASIS3BucketRequest.h
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/S3/ASIS3BucketRequest.h
+END
+ASIS3Request.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/S3/ASIS3Request.h
+END
+ASIS3BucketObject.m
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/S3/ASIS3BucketObject.m
+END
+ASIS3ServiceRequest.h
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/S3/ASIS3ServiceRequest.h
+END
+ASIS3BucketRequest.m
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/S3/ASIS3BucketRequest.m
+END
+ASINSXMLParserCompat.h
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/S3/ASINSXMLParserCompat.h
+END
+ASIS3Bucket.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/S3/ASIS3Bucket.h
+END
+ASIS3Request.m
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/S3/ASIS3Request.m
+END
+ASIS3ServiceRequest.m
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/S3/ASIS3ServiceRequest.m
+END
+ASIS3ObjectRequest.h
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/S3/ASIS3ObjectRequest.h
+END
+ASIS3Bucket.m
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/S3/ASIS3Bucket.m
+END
+ASIS3BucketObject.h
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/S3/ASIS3BucketObject.h
+END
+ASIS3ObjectRequest.m
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/roundware/!svn/ver/651/ios/scapes/trunk/Other%20Sources/ASIHTTPRequest1.8/Classes/S3/ASIS3ObjectRequest.m
+END

@@ -1,0 +1,12 @@
+# This list of commands should install Red5 on Ubunut 9.10
+sudo apt-get install ant default-jdk
+#svn co http://red5.googlecode.com/svn/java/server/trunk red5
+download red5-0.8.0
+export JAVA_HOME=/usr/lib/jvm/default-java/
+export ANT_HOME=/usr/share/ant
+cd red5
+ant prepare
+ant dist
+cd dist 
+sh red5.sh
+

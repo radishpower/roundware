@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/roundware/!svn/ver/663/ios/scapes/trunk/ShareKit/Sharers/Services/Facebook/FBConnect
+END
+FBFeedDialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/roundware/!svn/ver/663/ios/scapes/trunk/ShareKit/Sharers/Services/Facebook/FBConnect/FBFeedDialog.h
+END
+FBSession.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/roundware/!svn/ver/663/ios/scapes/trunk/ShareKit/Sharers/Services/Facebook/FBConnect/FBSession.h
+END
+FBRequest.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/roundware/!svn/ver/663/ios/scapes/trunk/ShareKit/Sharers/Services/Facebook/FBConnect/FBRequest.h
+END
+FBLoginDialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/roundware/!svn/ver/663/ios/scapes/trunk/ShareKit/Sharers/Services/Facebook/FBConnect/FBLoginDialog.h
+END
+FBFeedDialog.m
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/roundware/!svn/ver/663/ios/scapes/trunk/ShareKit/Sharers/Services/Facebook/FBConnect/FBFeedDialog.m
+END
+FBSession.m
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/roundware/!svn/ver/663/ios/scapes/trunk/ShareKit/Sharers/Services/Facebook/FBConnect/FBSession.m
+END
+FBConnect.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/roundware/!svn/ver/663/ios/scapes/trunk/ShareKit/Sharers/Services/Facebook/FBConnect/FBConnect.h
+END
+FBRequest.m
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/roundware/!svn/ver/663/ios/scapes/trunk/ShareKit/Sharers/Services/Facebook/FBConnect/FBRequest.m
+END
+FBLoginDialog.m
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/roundware/!svn/ver/663/ios/scapes/trunk/ShareKit/Sharers/Services/Facebook/FBConnect/FBLoginDialog.m
+END
+FBXMLHandler.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/roundware/!svn/ver/663/ios/scapes/trunk/ShareKit/Sharers/Services/Facebook/FBConnect/FBXMLHandler.h
+END
+FBDialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/roundware/!svn/ver/663/ios/scapes/trunk/ShareKit/Sharers/Services/Facebook/FBConnect/FBDialog.h
+END
+FBXMLHandler.m
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/roundware/!svn/ver/663/ios/scapes/trunk/ShareKit/Sharers/Services/Facebook/FBConnect/FBXMLHandler.m
+END
+FBLoginButton.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/roundware/!svn/ver/663/ios/scapes/trunk/ShareKit/Sharers/Services/Facebook/FBConnect/FBLoginButton.h
+END
+FBDialog.m
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/roundware/!svn/ver/663/ios/scapes/trunk/ShareKit/Sharers/Services/Facebook/FBConnect/FBDialog.m
+END
+FBPermissionDialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/roundware/!svn/ver/663/ios/scapes/trunk/ShareKit/Sharers/Services/Facebook/FBConnect/FBPermissionDialog.h
+END
+FBLoginButton.m
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/roundware/!svn/ver/663/ios/scapes/trunk/ShareKit/Sharers/Services/Facebook/FBConnect/FBLoginButton.m
+END
+FBConnectGlobal.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/roundware/!svn/ver/663/ios/scapes/trunk/ShareKit/Sharers/Services/Facebook/FBConnect/FBConnectGlobal.h
+END
+FBStreamDialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/roundware/!svn/ver/663/ios/scapes/trunk/ShareKit/Sharers/Services/Facebook/FBConnect/FBStreamDialog.h
+END
+FBPermissionDialog.m
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/roundware/!svn/ver/663/ios/scapes/trunk/ShareKit/Sharers/Services/Facebook/FBConnect/FBPermissionDialog.m
+END
+FBConnectGlobal.m
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/roundware/!svn/ver/663/ios/scapes/trunk/ShareKit/Sharers/Services/Facebook/FBConnect/FBConnectGlobal.m
+END
+FBStreamDialog.m
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/roundware/!svn/ver/663/ios/scapes/trunk/ShareKit/Sharers/Services/Facebook/FBConnect/FBStreamDialog.m
+END

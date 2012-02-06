@@ -1,0 +1,9 @@
+Package: RoundClient
+Version: 1.0
+Section: user/media
+Priority: optional
+Architecture: armel
+Depends: python2.5, python2.5-gobject, python2.5-gtk2, python2.5-gstreamer, python2.5-hildon, gstreamer0.10-plugins-extra, python2.5-simplejson
+Installed-Size: 1172
+Maintainer: Mike MacHenry <dskippy@ccs.neu.edu>
+Description: Round interactive sound installation (client)

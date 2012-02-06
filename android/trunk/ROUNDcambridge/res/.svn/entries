@@ -1,0 +1,67 @@
+10
+
+dir
+1099
+http://svn.halseyburgund.com/roundware/android/trunk/ROUNDcambridge/res
+http://svn.halseyburgund.com/roundware
+
+
+
+2012-01-08T19:43:51.125998Z
+1056
+halsey
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+e681dded-b247-0410-8a5f-ad132ba28b34
+
+values
+dir
+
+xml
+dir
+
+drawable-hdpi
+dir
+
+anim
+dir
+
+layout-normal-hdpi
+dir
+
+drawable-ldpi
+dir
+
+layout-large-hdpi
+dir
+
+drawable-mdpi
+dir
+
+layout-small-ldpi
+dir
+
+layout-normal-mdpi
+dir
+
+drawable-xhdpi
+dir
+
+layout
+dir
+
+color
+dir
+

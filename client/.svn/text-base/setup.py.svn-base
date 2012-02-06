@@ -1,0 +1,47 @@
+from distutils.core import setup
+from distutils.extension import Extension
+import glob
+
+setup(
+	name = "RoundClient", 
+	version = "1.0",
+	description      = 'Round Audio Client',
+	author           = 'Mike MacHenry',
+	author_email     = 'dskippy@ccs.neu.edu',
+	url              = 'http://roundware.sourceforge.net',
+	license          = 'GPL',
+	requires = [
+		"gobject",
+		"pygtk",
+		"gtk",
+		"gtk.glade",
+		"os",
+		"os.path",
+		"time",
+		"hildon",
+		"pygst(>=0.10)",
+		"gst",
+		"urllib",
+		"urllib2",
+		"mimetools",
+		"mimetypes",
+		"stat",
+		"ConfigParser",
+		"StringIO",
+		"simplejson",
+	],
+	scripts          = ['roundclient.sh'],
+	data_files = [
+		('share/roundclient', glob.glob('share/*.png')),
+		('share/roundclient', ['share/client.glade']),
+		('share/roundclient/images', glob.glob('share/images/*')),
+		('share/roundclient', ['share/round.db']),
+		('share/pixmaps', ['share/round_menu_logo.png']),
+		('lib/gstreamer-0.10', ['lib/libgstlevel.so']),
+		('share/themes/default/gtk-2.0', ['gtkrc']),
+		('share/applications/hildon', ['roundclient.desktop']),
+		('/etc/sudoers.d', ['share/roundware.sudoers']),
+		#('/media/mmc2', glob.glob('share/*mp3')),
+	],
+	packages = ["roundclient"],
+)

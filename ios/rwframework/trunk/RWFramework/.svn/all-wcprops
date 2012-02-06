@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/roundware/!svn/ver/1082/ios/rwframework/trunk/RWFramework
+END
+RWFramework.plist
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/roundware/!svn/ver/1015/ios/rwframework/trunk/RWFramework/RWFramework.plist
+END
+AudioQueue.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/roundware/!svn/ver/1043/ios/rwframework/trunk/RWFramework/AudioQueue.m
+END
+RWFramework.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/roundware/!svn/ver/1081/ios/rwframework/trunk/RWFramework/RWFramework.m
+END
+TODO.txt
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/roundware/!svn/ver/1082/ios/rwframework/trunk/RWFramework/TODO.txt
+END
+Reachability.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/roundware/!svn/ver/1013/ios/rwframework/trunk/RWFramework/Reachability.h
+END
+RWFrameworkBase.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/roundware/!svn/ver/1031/ios/rwframework/trunk/RWFramework/RWFrameworkBase.h
+END
+RWTagViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/roundware/!svn/ver/958/ios/rwframework/trunk/RWFramework/RWTagViewController.h
+END
+Reachability.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/roundware/!svn/ver/1013/ios/rwframework/trunk/RWFramework/Reachability.m
+END
+AudioQueue.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/roundware/!svn/ver/1043/ios/rwframework/trunk/RWFramework/AudioQueue.h
+END
+RWFramework.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/roundware/!svn/ver/1046/ios/rwframework/trunk/RWFramework/RWFramework.h
+END
+RWFrameworkBase.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/roundware/!svn/ver/1031/ios/rwframework/trunk/RWFramework/RWFrameworkBase.m
+END
+RWTagViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/roundware/!svn/ver/958/ios/rwframework/trunk/RWFramework/RWTagViewController.m
+END

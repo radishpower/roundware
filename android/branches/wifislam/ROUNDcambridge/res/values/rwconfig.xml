@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- ===================================================================== -->
+	<!-- App overwritable Roundware Specifications                             -->
+	<!-- ===================================================================== -->
+
+	<string name="rw_spec_server_url">http://r2c.dyndns.org:80/roundware/roundware.py</string>
+	<string name="rw_spec_config">r2c</string>
+	<string name="rw_spec_category_id">10</string>
+	<string name="rw_spec_sub_category_id">10</string>
+	<string name="rw_spec_heartbeat_interval_in_sec">30</string>
+
+	<string name="rw_spec_queue_check_interval_in_sec">10</string>
+	<string name="rw_spec_queued_file_basename">note</string>
+	<string name="rw_spec_queued_file_extension">.wav</string>
+	
+	<string name="rw_spec_max_recording_time_in_sec">45</string>
+	
+	<string name="rw_spec_include_location_in_requests_yn">Y</string>
+	<string name="rw_spec_min_location_update_time_msec">60000</string>
+	<string name="rw_spec_min_location_update_distance_meters">3</string>
+	<string name="rw_spec_location_based_questions_yn">Y</string>
+
+	<string name="rw_spec_static_soundtrack_session_id">-1</string>
+	<string name="rw_spec_static_soundtrack_name">outofrange_r2c.mp3</string>
+
+	<!-- ===================================================================== -->
+	<!-- Definitions for debugging purposes only (!)                           -->
+	<!-- ===================================================================== -->
+
+	<!-- 
+		Set to 'N' for normal operation, use 'Y' to skip adding a location to 
+		the request stream server call.
+	-->
+	<string name="rw_debug_open_audio_stream_without_location_yn">N</string>
+	
+	<!-- ===================================================================== -->
+	<!-- Definition of valid speaker types and categories                      -->
+	<!-- ===================================================================== -->
+	
+	<!-- Speaker Kinds (in display sequence, with demographicid before semicolumn)-->
+    <string-array name="rw_speaker_kind_listen">
+        <item>1:Women</item>
+        <item>2:Men</item>
+        <item>3:Girls</item>
+        <item>4:Boys</item>
+    </string-array>
+
+    <string-array name="rw_speaker_kind_record">
+        <item>1:Woman</item>
+        <item>2:Man</item>
+        <item>3:Girl</item>
+        <item>4:Boy</item>
+    </string-array>
+    
+	<!-- User Types, characters before the semicolon are to be sent to the server as usertypeid -->
+	<!-- Note: if there is only one item in the list, it should not be displayed for user selection -->
+    <string-array name="rw_user_type">
+    	<item>18:Participant</item>
+    </string-array>
+
+	<!-- Example of a full list: 
+    <string-array name="rw_user_type">
+    	<item>1:I don\'t like categories</item>
+    	<item>15:Advocate</item>
+    	<item>2:Artist/Musician</item>
+    	<item>5:Business Person</item>
+    	<item>13:Conservationist</item>
+    	<item>14:Fisherman</item>
+    	<item>16:Politician</item>
+    	<item>4:Scientist</item>
+    	<item>3:Student</item>
+    	<item>6:Teacher</item>
+    </string-array>
+	 -->
+
+</resources>

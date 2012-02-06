@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/roundware/!svn/ver/902/android/trunk/RWExampleTest
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/roundware/!svn/ver/902/android/trunk/RWExampleTest/.classpath
+END
+proguard.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/roundware/!svn/ver/902/android/trunk/RWExampleTest/proguard.cfg
+END
+project.properties
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/roundware/!svn/ver/902/android/trunk/RWExampleTest/project.properties
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/roundware/!svn/ver/902/android/trunk/RWExampleTest/.project
+END
+AndroidManifest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/roundware/!svn/ver/902/android/trunk/RWExampleTest/AndroidManifest.xml
+END

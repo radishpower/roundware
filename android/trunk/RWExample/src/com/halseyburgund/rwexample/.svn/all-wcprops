@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/roundware/!svn/ver/1067/android/trunk/RWExample/src/com/halseyburgund/rwexample
+END
+Utils.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/roundware/!svn/ver/1035/android/trunk/RWExample/src/com/halseyburgund/rwexample/Utils.java
+END
+RWExampleActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/roundware/!svn/ver/1067/android/trunk/RWExample/src/com/halseyburgund/rwexample/RWExampleActivity.java
+END
+RWListenActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/roundware/!svn/ver/1054/android/trunk/RWExample/src/com/halseyburgund/rwexample/RWListenActivity.java
+END
+RWPreferenceActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/roundware/!svn/ver/1017/android/trunk/RWExample/src/com/halseyburgund/rwexample/RWPreferenceActivity.java
+END
+RWSpeakActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/roundware/!svn/ver/1052/android/trunk/RWExample/src/com/halseyburgund/rwexample/RWSpeakActivity.java
+END
