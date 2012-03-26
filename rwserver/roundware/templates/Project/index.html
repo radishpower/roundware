@@ -1,0 +1,61 @@
+{% extends "tabstrip.html" %}
+
+{% block content %}
+<div id="container">
+  <div class="inner-container">
+  <div class="left-container">
+    <div class="text">
+      <h3>Number of Unique Sessions</h3>
+      <h4><strong>{{ thisproject.name }}</strong></h4> 
+
+      <p>There are <strong>{{ total_assets }}</strong> total sessions (also the total
+number of assets) of which <strong>{{ unique_sessions }}</strong> sessions are unique (have unique session numbers)</p>
+
+      <p>The average session time is 1000.34 milliseconds
+
+The total amount of listening time up until now is 235 seconds
+
+Total time spent listening up until now is 400 seconds
+
+There are 23 envelope entries without asset files</p>
+
+    </div>
+  </div>
+
+  <div class="center-container">
+    <div id="infovis"></div>    
+  </div>
+
+  <script language="javascript">
+    init_piechart('infovis', {{ piechart_json|safe }});
+  </script>
+  </div>
+
+    <div class="inner-container">
+  <div class="left-container">
+    <div class="text">
+      <h3>Time Spent on Audio Recordings</h3>
+      <h4><strong>{{ thisproject.name }}</strong></h4>
+      <p>Each session may have several audio tracks periods.</p>
+      <p>The average audio track length is <strong>{{ avg_soundlength }}</strong> seconds independent of which session it belongs to</p>      
+      <p>Total recording time in this project is <strong>{{ total_length }}</strong></p> 
+
+    </div>
+  </div>
+
+  <div class="center-container">
+    <div id="vis"></div>    
+  </div>
+
+  <script language="javascript">
+    init_linechart('vis', {{ linechart_json|safe }});
+    alert(linechart_json['label'])
+  </script>
+  </div>
+</div> <!--container-->
+
+<!-- For Debug -->
+<div id="log"></div>
+</div>
+
+{% endblock %}
